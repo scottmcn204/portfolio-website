@@ -47,7 +47,7 @@ export default function Home() {
           <div className='flex justify-center mb-5'>
             <div className='md:text-4xl text-3xl flex justify-center text-white bg-gradient-to-r from-gray-400 to-gray-500 px-4 py-2 rounded-md md:w-56'>
               <AiFillLinkedin/>
-              <h3 className='md:text-xl text-base py-1 px-2 font-bold'><a href='https://www.linkedin.com/in/scottamcnally' target={"_blank"}>Get in Touch</a></h3>
+              <h3 className='md:text-xl text-base py-1 px-2 font-bold'><a href='https://www.linkedin.com/in/scottamcnally'>Get in Touch</a></h3>
             </div>
           </div>
         </section>
