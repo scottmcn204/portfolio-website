@@ -2,7 +2,7 @@ import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import{AiFillLinkedin} from 'react-icons/ai';
 import Image from "next/image";
-import myIcon from "/myIcon.png";
+import myIcon from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/myIcon.png";
 import flashcards from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/flashcards.png";
 import helphome from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/help@home.png";
 import portfolio from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/portfolio.jpeg";
@@ -25,10 +25,10 @@ export default function Home() {
       <main className='bg-white px-10 mx-auto md:px-20 lg:px-40 dark:bg-gray-700'>
         <section className = "min-h-screen">
           <nav className='flex justify-between py-10 mb-5'>
-            <h1 className='text-lg md:text-xl font-burtons dark:text-white'>Scott McNally</h1>
+            <h1 className='text-lg md:text-xl font-burtons sdark:text-white'>Scott McNally</h1>
             <ul className='flex items-center'>
               <li className=' cursor-pointer text-white bg-gradient-to-r from-cyan-500 to-teal-500 p-2 rounded-full text-base md:text-xl'><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}/></li>
-              <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href="#">Resume</a></li>
+              <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href="/Resume.pdf">Resume</a></li>
             </ul>
           </nav>
           <div className='relative mx-auto w-40 h-40 bg-gradient-to-b from-gray-300 to-teal-300 rounded-full shadow-2xl md:h-64 md:w-64'>
