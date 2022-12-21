@@ -29,7 +29,7 @@ export default function Home() {
             <h1 className='text-lg md:text-xl font-burtons sdark:text-white'>Scott McNally</h1>
             <ul className='flex items-center'>
               <li className=' cursor-pointer text-white bg-gradient-to-r from-cyan-500 to-teal-500 p-2 rounded-full text-base md:text-xl'><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}/></li>
-              <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href={resume}>Resume</a></li>
+              <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href="#">Resume</a></li>
             </ul>
           </nav>
           <div className='relative mx-auto w-40 h-40 bg-gradient-to-b from-gray-300 to-teal-300 rounded-full shadow-2xl md:h-64 md:w-64'>
