@@ -32,7 +32,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className='relative mx-auto w-40 h-40 bg-gradient-to-b from-gray-300 to-teal-300 rounded-full shadow-2xl md:h-64 md:w-64'>
-            <Image src={myIcon} className='rounded-full h-full w-full object-cover object-center border-transparent border-4'/>
+            <Image src={myIcon} className='rounded-full h-full w-full object-cover object-center border-transparent border-4' alt="image"/>
           </div>
           <div className='text-center pb-10 pt-5'>
             <h2 className='font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 p-4'>Scott McNally</h2>
@@ -69,19 +69,19 @@ export default function Home() {
           <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
             <h3 className='text-xl md:text-2xl py-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>I have experience with:</h3>
             <div className='flex justify-center text-lg bg-gradient-to-r from-orange-400 to-orange-600 text-white w-48 mx-auto rounded-lg mb-3'>
-              <Image src={swift} className="h-5 w-5 my-auto mr-2"/>
+              <Image src={swift} className="h-5 w-5 my-auto mr-2" alt="image"/>
               <p className=' font-bold py-2'>Swift</p>
             </div>
             <div className='flex justify-center text-lg bg-gradient-to-r from-red-500 to-red-700 text-white w-48 mx-auto rounded-lg mb-3'>
-              <Image src={java} className="h-5 w-7 my-auto mr-2"/>
+              <Image src={java} className="h-5 w-7 my-auto mr-2" alt="image"/>
               <p className=' font-bold py-2'>Java</p>
             </div>
             <div className='flex justify-center text-lg bg-gradient-to-r from-blue-600 to-blue-800 text-white w-48 mx-auto rounded-lg mb-3'>
-              <Image src={python} className="h-5 w-5 my-auto mr-2"/>
+              <Image src={python} className="h-5 w-5 my-auto mr-2" alt="image"/>
               <p className=' font-bold py-2'>Python</p>
             </div>
             <div className='flex justify-center text-lg bg-gradient-to-r from-cyan-500 to-cyan-700 text-white w-48 mx-auto rounded-lg mb-3'>
-              <Image src={web} className="h-5 w-5 my-auto mr-2"/>
+              <Image src={web} className="h-5 w-5 my-auto mr-2" alt="image"/>
               <p className=' font-bold py-2'>Web Dev</p>
             </div>
 
@@ -97,19 +97,19 @@ export default function Home() {
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1 max-w-sm mx-auto relative'>
               <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>RallyNavigator App</h2>
-              <Image src={rally} className='rounded-3xl object-cover opacity-80 shadow-2xl'  width={'100%'} height={'100%'}/>
+              <Image src={rally} className='rounded-3xl object-cover opacity-80 shadow-2xl'  width={'100%'} height={'100%'} alt="image"/>
             </div>
             <div className='basis-1/3 flex-1 max-w-sm mx-auto relative'>
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Flashcards App</h2>
-              <Image src={flashcards} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'}/>
+              <Image src={flashcards} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
             </div>
             <div className='basis-1/3 flex-1 max-w-sm mx-auto relative'>
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Elderly Reminder System</h2>
-              <Image src={helphome} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'}/>
+              <Image src={helphome} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
             </div>
             <div className='basis-1/3 flex-1 max-w-sm mx-auto relative'>
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Portfolio Website</h2>
-              <Image src={portfolio} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'}/>
+              <Image src={portfolio} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
             </div>
           </div>
         </section>
