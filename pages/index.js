@@ -11,7 +11,7 @@ import swift from "/public/swift.png";
 import java from "/public/java.png";
 import web from "/public/web.png"
 import python from "/public/python.png";
-import resume from "/public/resume.pdf";
+//import resume from "/public/resume.pdf";
 import { useState } from 'react';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
