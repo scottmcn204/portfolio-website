@@ -2,15 +2,15 @@ import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import{AiFillLinkedin} from 'react-icons/ai';
 import Image from "next/image";
-import myIcon from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/myIcon.png";
-import flashcards from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/flashcards.png";
-import helphome from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/help@home.png";
-import portfolio from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/portfolio.jpeg";
-import rally from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/rally.png";
-import swift from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/swift.png";
-import java from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/java.png";
-import web from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/web.png"
-import python from "/Users/scottmcnally/Developer/Personal Projects/React Portfolio Website/portfolio-website/public/python.png";
+import myIcon from "/public/myIcon.png";
+import flashcards from "/public/flashcards.png";
+import helphome from "/public/help@home.png";
+import portfolio from "/public/portfolio.jpeg";
+import rally from "/public/rally.png";
+import swift from "/public/swift.png";
+import java from "/public/java.png";
+import web from "/public/web.png"
+import python from "/public/python.png";
 import { useState } from 'react';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
