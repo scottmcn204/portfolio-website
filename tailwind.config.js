@@ -7,9 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'float-slow': 'bounce 2s ease-out infinite',
+        fadeIn : 'fadeIn 1s ease-in',
+      },
       fontFamily: {
         burtons: "burtons",
-      }
+      },
+      keyframes: {
+        fadeIn : {
+          '0%' : { opacity: '0' },
+          '100%' : { opacity: '1' },
+        },
+      },
     },
   },
   plugins: [],
