@@ -26,7 +26,7 @@ export default function Home() {
       <main className='bg-white px-10 mx-auto md:px-20 lg:px-40 dark:bg-gray-700'>
         <section className = "min-h-screen">
           <nav className='flex justify-between py-10 mb-5'>
-            <h1 className='text-lg md:text-xl font-burtons sdark:text-white'>Scott McNally</h1>
+            <h1 className='text-lg md:text-xl font-burtons dark:text-white'>Scott McNally</h1>
             <ul className='flex items-center'>
               <li className=' cursor-pointer text-white bg-gradient-to-r from-cyan-500 to-teal-500 p-2 rounded-full text-base md:text-xl'><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}/></li>
               <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href="#">Resume</a></li>
@@ -71,19 +71,19 @@ export default function Home() {
             <h3 className='text-xl md:text-2xl py-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>I have experience with:</h3>
             <div className='flex justify-center text-lg bg-gradient-to-r from-orange-400 to-orange-600 text-white w-48 mx-auto rounded-lg mb-3'>
               <Image src={swift} className="h-5 w-5 my-auto mr-2" alt="image"/>
-              <p className=' font-bold py-2'>Swift</p>
+              <p className=' font-bold py-2'><a href='https://developer.apple.com/swift/'>Swift</a></p>
             </div>
             <div className='flex justify-center text-lg bg-gradient-to-r from-red-500 to-red-700 text-white w-48 mx-auto rounded-lg mb-3'>
               <Image src={java} className="h-5 w-7 my-auto mr-2" alt="image"/>
-              <p className=' font-bold py-2'>Java</p>
+              <p className=' font-bold py-2'><a href='https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html'>Java</a></p>
             </div>
             <div className='flex justify-center text-lg bg-gradient-to-r from-blue-600 to-blue-800 text-white w-48 mx-auto rounded-lg mb-3'>
               <Image src={python} className="h-5 w-5 my-auto mr-2" alt="image"/>
-              <p className=' font-bold py-2'>Python</p>
+              <p className=' font-bold py-2'><a href='https://www.python.org'>Python</a></p>
             </div>
             <div className='flex justify-center text-lg bg-gradient-to-r from-cyan-500 to-cyan-700 text-white w-48 mx-auto rounded-lg mb-3'>
               <Image src={web} className="h-5 w-5 my-auto mr-2" alt="image"/>
-              <p className=' font-bold py-2'>Web Dev</p>
+              <p className=' font-bold py-2'><a href='https://reactjs.org'>Web Dev</a></p>
             </div>
 
           </div>
