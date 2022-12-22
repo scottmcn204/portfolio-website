@@ -12,9 +12,14 @@ import java from "/public/java.png";
 import web from "/public/web.png"
 import python from "/public/python.png";
 //import resume from "/public/resume.pdf";
-import { useState } from 'react';
+import { use, useState } from 'react';
+import {useRef} from 'react';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const ref = useRef(null);
+  const handleClick = () => {
+    ref?.current.scrollIntoView({behavior: 'smooth'});
+  };
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -40,9 +45,9 @@ export default function Home() {
             <p className='font-bold text-sm md:text-lg dark:text-white'>Computer Science Student based in Dublin, Ireland</p>
           </div>
           <div className='flex justify-center  mb-5'>
-            <div className=' text-base md:text-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md'>
+            <button onClick={handleClick} className=' text-base md:text-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md'>
               <h3 className='font-bold '>About Me</h3>
-            </div>
+            </button>
 
           </div>
           <div className='flex justify-center mb-5'>
@@ -52,7 +57,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='min-h-screen '>
+        <section ref={ref} className='min-h-screen '>
           <h3 className='text-2xl font-burtons py-1 dark:text-white text-center'>About Me</h3>
           <p className='text-sm md:text-base p-4 text-gray-800 m-1 mb-2 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
             I am currently studying Computer Science in <span className='text-pink-400 font-bold'>Trinity College
