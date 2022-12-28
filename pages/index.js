@@ -37,21 +37,21 @@ export default function Home() {
               <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href="#">Resume</a></li>
             </ul>
           </nav>
-          <div className='relative mx-auto w-40 h-40 bg-gradient-to-b from-gray-300 to-teal-300 rounded-full shadow-2xl md:h-64 md:w-64 animate-fadeIn'>
+          <div className='relative mx-auto w-40 h-40 bg-gradient-to-b from-gray-300 to-teal-300 rounded-full shadow-2xl md:h-64 md:w-64 animate-appearfade'>
             <Image src={myIcon} className='rounded-full h-full w-full object-cover object-center border-transparent border-4' alt="image"/>
           </div>
           <div className='text-center pb-10 pt-5'>
-            <h2 className='font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 p-4 animate-fadeIn'>Scott McNally</h2>
-            <p className='font-bold text-sm md:text-lg dark:text-white'>Computer Science Student based in Dublin, Ireland</p>
+            <h2 className='font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 p-4 animate-appearfade'>Scott McNally</h2>
+            <p className='font-bold text-sm md:text-lg dark:text-white animate-appearfade'>Computer Science Student based in Dublin, Ireland</p>
           </div>
           <div className='flex justify-center  mb-5'>
-            <button onClick={handleClick} className=' text-base md:text-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md animate-float-slow'>
+            <button onClick={handleClick} className=' text-base md:text-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md animate-appearfade '>
               <h3 className='font-bold '>About Me</h3>
             </button>
 
           </div>
           <div className='flex justify-center mb-5'>
-            <div className='md:text-4xl text-3xl flex justify-center text-white bg-gradient-to-r from-gray-400 to-gray-500 px-4 py-2 rounded-md md:w-56'>
+            <div className='md:text-4xl text-3xl flex justify-center text-white bg-gradient-to-r from-gray-400 to-gray-500 px-4 py-2 rounded-md md:w-56 animate-appearfade'>
               <AiFillLinkedin/>
               <h3 className='md:text-xl text-base py-1 px-2 font-bold'><a href='https://www.linkedin.com/in/scottamcnally'>Get in Touch</a></h3>
             </div>

@@ -9,16 +9,18 @@ module.exports = {
     extend: {
       animation: {
         'float-slow': 'bounce 2s ease-out infinite',
-        fadeIn : 'fadeIn 1s ease-in',
+        appearfade : 'appear 1.5s ease-in',
       },
       fontFamily: {
         burtons: "burtons",
       },
       keyframes: {
-        fadeIn : {
-          '0%' : { opacity: '0' },
-          '100%' : { opacity: '1' },
-        },
+        appear: {
+          '0%' : { transform: 'translateY(30px)',
+                    opacity: '0' },
+          '100%' : { transform : 'translateY(-10px)',
+                    opacity: '1' }
+        }
       },
     },
   },
