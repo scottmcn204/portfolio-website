@@ -124,7 +124,7 @@ export default function Home() {
                   I allows users to create and organise flashcards which can then be used to test themselves. The app solves the problem of students usually
                   requiring lots of waisted paper to create flashcards for their exams and makes the process more efficeint and simple. This project introduced me to being able to 
                   store and manipulate persistant data. I also learned about different ways of doing this such as databases and local storage on mobile. </p>
-                <a href='https://github.com/scottmcn204/Rally' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg'>View the Code</a>
+                <a href='https://github.com/scottmcn204/Flashcards3' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg'>View the Code</a>
                 </div>}
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Flashcards App</h2>
               <Image src={flashcards} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
