@@ -28,7 +28,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-white px-10 mx-auto md:px-20 lg:px-40 dark:bg-gray-700 transition-colors duration-700'>
+      <main className='bg-white px-10 mx-auto md:px-20 lg:px-40 dark:bg-gray-700 transition-colors duration-700 h-full'>
         <section className = "min-h-screen">
           <nav className='flex justify-between py-10 mb-5'>
             <h1 className='text-lg md:text-xl font-burtons dark:text-white'>Scott McNally</h1>
