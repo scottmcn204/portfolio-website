@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <title>Safari 15 how to remove the spacin… | Apple Developer Forums</title>
+    
+    
+    
+
+  
+  
+  
+
+  
+    <link rel="canonical" href="https://developer.apple.com/forums/thread/685727"/>
+  
+
+    <link href="https://forums.developer.apple.com/forums/public/compiled/pages/thread.css" rel="stylesheet">
+  
+
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="encryption" data-status="enabled" data-x-token="disabled">
+
+
+    <link rel="shortcut icon" href="https://forums.developer.apple.com/forums/public/assets/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="//developer.apple.com/assets/styles/globalnav.css">
+<link rel="stylesheet" type="text/css" href="//developer.apple.com/assets/styles/search.css">
+
+    <link href="https://forums.developer.apple.com/forums/public/compiled/decorator.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//developer.apple.com/assets/styles/footer.dist.css" />
+
+    
+
+    
+  
+  <link rel="stylesheet" type="text/css" href="//communities.apple.com/wss20181115/fonts/?family=Apple+Icons&amp;v=1">
+
+  
+  <link rel="stylesheet" type="text/css" href="//communities.apple.com/wss20181115/fonts?families&#x3D;SF+Pro,v2%7CSF+Pro+Icons,v1">
+
+
+    <style type="text/css">
+    /** NONE */
+</style>
+<script type="text/javascript">
+    /** NONE **/
+</script>
+  </head>
+  <body>
+
+    <aside id="ac-gn-segmentbar" class="ac-gn-segmentbar" lang="en-US" dir="ltr">
+</aside>
+<input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate" />
+<nav id="ac-globalnav" class="no-js" role="navigation" aria-label="Global" data-hires="false" data-analytics-region="global nav" lang="en-US" dir="ltr"
+    data-www-domain="www.apple.com"
+    data-store-locale="us"
+    data-store-root-path="/us"
+    data-store-api="/[storefront]/shop/bag/status"
+    data-search-locale="en_US">
+    
+	<div class="ac-gn-content">
+		<ul class="ac-gn-header">
+			<li class="ac-gn-item ac-gn-menuicon">
+				<label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true">
+					<span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+						<span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span>
+					</span>
+					<span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+						<span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span>
+					</span>
+				</label>
+				<a href="#ac-gn-menustate" role="button" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open">
+					<span class="ac-gn-menuanchor-label">Global Nav Open Menu</span>
+				</a>
+				<a href="#" role="button" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close">
+					<span class="ac-gn-menuanchor-label">Global Nav Close Menu</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-apple">
+				<a class="ac-gn-link ac-gn-link-apple-developer" href="https://developer.apple.com/" data-analytics-title="appledeveloper home" id="ac-gn-firstfocus-small">
+					<span class="ac-gn-link-text">Apple Developer</span>
+				</a>
+			</li>
+		</ul>
+		<div class="ac-gn-search-placeholder-container" role="search">
+			<div class="ac-gn-search ac-gn-search-small">
+				<a id="ac-gn-link-search-small" class="ac-gn-link" href="https://developer.apple.com/search/" data-analytics-title="search" data-analytics-click="search" data-analytics-intrapage-link aria-label="Search">
+					<div class="ac-gn-search-placeholder-bar">
+						<div class="ac-gn-search-placeholder-input">
+							<div class="ac-gn-search-placeholder-input-text" aria-hidden="true">
+								<div class="ac-gn-link-search ac-gn-search-placeholder-input-icon"></div>
+								<span class="ac-gn-search-placeholder">Search</span>
+							</div>
+						</div>
+						<div class="ac-gn-searchview-close ac-gn-searchview-close-small ac-gn-search-placeholder-searchview-close">
+							<span class="ac-gn-searchview-close-cancel" aria-hidden="true">Cancel</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<ul class="ac-gn-list">
+			<li class="ac-gn-item ac-gn-apple">
+				<a class="ac-gn-link ac-gn-link-apple-developer" href="https://developer.apple.com/" data-analytics-title="appledeveloper home" id="ac-gn-firstfocus">
+					<span class="ac-gn-link-text">Apple Developer</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-news">
+				<a class="ac-gn-link ac-gn-link-news" href="https://developer.apple.com/news/" data-analytics-title="news">
+					<span class="ac-gn-link-text">News</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-discover">
+				<a class="ac-gn-link ac-gn-link-discover" href="https://developer.apple.com/discover/" data-analytics-title="discover">
+					<span class="ac-gn-link-text">Discover</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-design">
+				<a class="ac-gn-link ac-gn-link-design" href="https://developer.apple.com/design/" data-analytics-title="design">
+					<span class="ac-gn-link-text">Design</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-develop">
+				<a class="ac-gn-link ac-gn-link-develop" href="https://developer.apple.com/develop/" data-analytics-title="develop">
+					<span class="ac-gn-link-text">Develop</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-distribute">
+				<a class="ac-gn-link ac-gn-link-distribute" href="https://developer.apple.com/distribute/" data-analytics-title="distribute">
+					<span class="ac-gn-link-text">Distribute</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-dsupport">
+				<a class="ac-gn-link ac-gn-link-dsupport" href="https://developer.apple.com/support/" data-analytics-title="dsupport">
+					<span class="ac-gn-link-text">Support</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-account">
+				<a class="ac-gn-link ac-gn-link-account" href="https://developer.apple.com/account/" data-analytics-title="account">
+					<span class="ac-gn-link-text">Account</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-search" role="search">
+				<a id="ac-gn-link-search" class="ac-gn-link ac-gn-link-search" href="https://developer.apple.com/search/" data-analytics-title="search" data-analytics-click="search" data-analytics-intrapage-link aria-label="Search"></a>
+			</li>
+		</ul>
+		<aside id="ac-gn-searchview" class="ac-gn-searchview" role="search" data-analytics-region="search">
+			<div class="ac-gn-searchview-content">
+				<div class="ac-gn-searchview-bar">
+					<div class="ac-gn-searchview-bar-wrapper">
+						<form id="ac-gn-searchform" class="ac-gn-searchform" action="/search/" method="get">
+							<div class="ac-gn-searchform-wrapper">
+								<input id="ac-gn-searchform-input" class="ac-gn-searchform-input" type="text" name="q" aria-label="Search" placeholder="Search" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="true" aria-owns="quicklinks suggestions" />
+								<button id="ac-gn-searchform-submit" class="ac-gn-searchform-submit" type="submit" disabled aria-label="Submit Search"></button>
+								<button id="ac-gn-searchform-reset" class="ac-gn-searchform-reset" type="reset" disabled aria-label="Clear Search">
+										<span class="ac-gn-searchform-reset-background"></span>
+									</button>
+							</div>
+						</form>
+						<button id="ac-gn-searchview-close-small" class="ac-gn-searchview-close ac-gn-searchview-close-small" aria-label="Cancel Search">
+								<span class="ac-gn-searchview-close-cancel" aria-hidden="true">
+									Cancel
+								</span>
+							</button>
+					</div>
+				</div>
+				<aside id="ac-gn-searchresults" class="ac-gn-searchresults hidden" data-string-quicklinks="Quick Links" data-string-suggestions="Suggested Searches" data-string-noresults="">
+                    <section class="ac-gn-searchresults-section ac-gn-searchresults-section-defaultlinks">
+                        <div class="ac-gn-searchresults-section-wrapper">
+							<div class="search-group-checkbox hidden"><input id="group-input" type="checkbox" name="group-filter" checked>Only search within “<span id="group-search-label"></span>”</div>
+                            <h3 class="ac-gn-searchresults-header ac-gn-searchresults-animated">Quick Links</h3>
+                            <ul class="ac-gn-searchresults-list" id="defaultlinks" role="listbox">
+                            </ul>
+                            <span role="status" class="ac-gn-searchresults-count" aria-live="polite">5 Quick Links</span>
+                        </div>
+                    </section>
+                </aside>
+			</div>
+			<button id="ac-gn-searchview-close" class="ac-gn-searchview-close" aria-label="Cancel Search">
+					<span class="ac-gn-searchview-close-wrapper">
+						<span class="ac-gn-searchview-close-left"></span>
+						<span class="ac-gn-searchview-close-right"></span>
+					</span>
+				</button>
+		</aside>
+			</div>
+</nav>
+<div class="ac-gn-blur"></div>
+<div id="ac-gn-curtain" class="ac-gn-curtain"></div>
+<div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
+
+
+    <div id="main-content">
+      <nav class="sub-nav" aria-label="Developer Forums">
+  <a href="/forums/" class="title">
+    <span class="hide-mobile-inline">Developer</span> Forums
+  </a>
+
+  <div class="search-container">
+    <div class="search-component">
+      
+
+<form action="/forums/search/" class="search-form" method="GET" data-action="search-form" role="search" aria-label="Developer Forums" novalidate="novalidate">
+
+  <label for="search-forums-1" class="a11y">Search by keywords or tags</label>
+
+  <input type="text" data-cy="search" class="search-form-input with-tooltip" id="search-forums-1" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="250" required="true" aria-required="true" placeholder="Search by keywords or tags" aria-invalid="false" data-action="search-input">
+
+  <button class="submit-button" type="submit" data-action="submit-button">
+    <span class="a11y">Submit Search</span>
+  </button>
+
+  <button class="reset-button hidden" data-action="search-reset">
+    <span class="a11y">Clear search query</span>
+  </button>
+
+  
+    
+
+<div class="tooltip-wrapper" data-action="tooltip" >
+  
+    
+        <button class="icon icon-questionmark" type="button" aria-describedby="search-tooltip">
+          <span class="a11y">Additional information about Search by keywords or tags</span>
+        </button>
+      
+  
+  <div class="tooltip medium-width long-width small-width  bottom"
+   id="search-tooltip"
+  role="tooltip"
+  data-action="tooltip-content"
+  
+  
+   tabindex="-1">
+    <div class="search-help"><div class="search-title">Supported Searches:</div><div class="row"><div class="column">Keyword search</div><div class="column"><div class="syntax">keyword</div></div></div><div class="row"><div class="column"> Single tag</div><div class="column"><div class="syntax"> [iOS]</div></div></div><div class="row"><div class="column"> Multiple tags with OR</div><div class="column"><div class="syntax"> [iOS] OR [macOS] OR [Xcode]</div></div></div><div class="row"><div class="column"> Multiple tags with AND</div><div class="column"><div class="syntax"> [iOS][macOS][Xcode]</div></div></div><div class="row"><div class="column"> Keywords and tags</div><div class="column"><div class="syntax"> [iOS][macOS] keyword</div></div></div><div class="row"><div class="column"> Usernames and profiles</div><div class="column"><div class="syntax"> user:appleseed</div></div></div></div>
+  
+  </div>
+</div>
+
+  
+
+  <div class="search-error hidden" data-action="error-message" aria-live="polite"></div>
+
+</form>
+
+    </div>
+  </div>
+
+  <div class="right-column">
+    <a class="create-post-button button button-reduced" data-action="ask-question" href="/forums/post/question" aria-label="Ask a Post" data-cy="askAQuestion">
+      <div class="button-text">
+        Post
+      </div>
+    </a>
+    <div class="profile-dropdown">
+      
+        
+
+
+  
+    
+
+<div class="dropdown" data-action="profile-drop-down" data-action-auto-alignment="true" data-auto-focus-first-item="true">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <button class="drop-down-button user-login interactive " aria-haspopup="true" aria-expanded="false" data-action="drop-down-button">
+      <span class="a11y">Profile</span>
+    </button>
+    <span class="arrow" aria-hidden="true">&#9650;</span>
+  
+
+  
+
+  
+    
+      
+
+
+  <ul class="drop-down-menu userlogin hidden center "  data-default-alignment="center"  data-action="drop-down-menu" role="menu">
+    
+    
+      <li class="menu-item" role="presentation"><a role="menuitem" class="menu-item-link" href="/forums/login" data-action="drop-down-menu-item" aria-current="false">Sign in</a></li>
+    
+      <li class="menu-item" role="presentation"><a role="menuitem" class="menu-item-link" href="/forums/login#" data-action="drop-down-menu-item" aria-current="false">Create account</a></li>
+    
+  </ul>
+
+
+    
+  
+</div>
+  
+
+
+      
+    </div>
+  </div>
+
+  <div class="hide-desktop-flex search-mobile-container">
+    
+
+<form action="/forums/search/" class="search-form" method="GET" data-action="search-form" role="search" aria-label="Developer Forums" novalidate="novalidate">
+
+  <label for="search-forums-2" class="a11y">Search by keywords or tags</label>
+
+  <input type="text" data-cy="search" class="search-form-input with-tooltip" id="search-forums-2" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="250" required="true" aria-required="true" placeholder="Search by keywords or tags" aria-invalid="false" data-action="search-input">
+
+  <button class="submit-button" type="submit" data-action="submit-button">
+    <span class="a11y">Submit Search</span>
+  </button>
+
+  <button class="reset-button hidden" data-action="search-reset">
+    <span class="a11y">Clear search query</span>
+  </button>
+
+  
+    
+
+<div class="tooltip-wrapper" data-action="tooltip" >
+  
+    
+        <button class="icon icon-questionmark" type="button" aria-describedby="search-tooltip">
+          <span class="a11y">Additional information about Search by keywords or tags</span>
+        </button>
+      
+  
+  <div class="tooltip medium-width long-width small-width  bottom"
+   id="search-tooltip"
+  role="tooltip"
+  data-action="tooltip-content"
+  
+  
+   tabindex="-1">
+    <div class="search-help"><div class="search-title">Supported Searches:</div><div class="row"><div class="column">Keyword search</div><div class="column"><div class="syntax">keyword</div></div></div><div class="row"><div class="column"> Single tag</div><div class="column"><div class="syntax"> [iOS]</div></div></div><div class="row"><div class="column"> Multiple tags with OR</div><div class="column"><div class="syntax"> [iOS] OR [macOS] OR [Xcode]</div></div></div><div class="row"><div class="column"> Multiple tags with AND</div><div class="column"><div class="syntax"> [iOS][macOS][Xcode]</div></div></div><div class="row"><div class="column"> Keywords and tags</div><div class="column"><div class="syntax"> [iOS][macOS] keyword</div></div></div><div class="row"><div class="column"> Usernames and profiles</div><div class="column"><div class="syntax"> user:appleseed</div></div></div></div>
+  
+  </div>
+</div>
+
+  
+
+  <div class="search-error hidden" data-action="error-message" aria-live="polite"></div>
+
+</form>
+
+  </div>
+</nav>
+
+
+      
+    <main class="page" role="main">
+      
+        
+        
+          <div class="question" id="question-container" data-action="data-container" data-op='xuning0' data-contributors='carlosj,JosephDuffy,rmf123,'>
+            
+
+<section
+  role="article"
+   aria-label="Thread post"
+   data-post-id="685727021" id="685727021"
+   data-post-type="QUESTION"
+  data-action="content-post"
+  class="content-post question"
+  aria-labelledby="replyname-685727021"
+  aria-describedby="post-status-685727021
+    
+      
+    ">
+  <div class="hidden content-post-error-message" aria-live="polite" data-action="content-post-error-box">
+    <span class="icon icon-before icon-exclamationsolid" aria-hidden="true">&nbsp;</span>
+    <span data-action="content-post-error-message"></span>
+  </div>
+  
+    <div class="header" data-action="thread-question-header">
+      
+        <h1 class="title" id="post-685727021">Safari 15 how to remove the spacing at top and bottom of a webpage </h1>
+        
+          
+          
+        
+      
+    </div>
+  
+  
+    
+                
+                  
+                    
+                  
+                
+
+                
+
+  
+
+
+  
+    
+      
+        
+          
+            
+              <section class="announcements callout banner " data-action="message-banner-watching" role="region" aria-label="Announcements">
+                <span class="icon icon-before icon-infocircle" aria-hidden="true">&nbsp;</span>
+                <div class="title" aria-live="polite" data-analytics="announcement:link">
+                  You’re now watching this thread and will receive emails when there’s activity. Click again to stop watching or visit your profile/homepage to manage your watched threads.
+                </div>
+                
+              </section>
+            
+          
+        
+      
+    
+  
+
+
+
+
+                
+
+  
+
+
+  
+    
+      
+        
+          
+            
+              <section class="announcements callout banner " data-action="message-banner-unwatching" role="region" aria-label="Announcements">
+                <span class="icon icon-before icon-infocircle" aria-hidden="true">&nbsp;</span>
+                <div class="title" aria-live="polite" data-analytics="announcement:link">
+                  You’ve stopped watching this thread and will no longer receive emails when there’s activity. Click again to start watching.
+                </div>
+                
+              </section>
+            
+          
+        
+      
+    
+  
+
+
+
+
+              
+  
+  <div class="content ">
+    <div class="column-right ">
+      <div class="post">
+        <div class="post-content" data-post-id="685727021" tabindex="-1"  data-post-type="QUESTION" data-action="content-post-body-content">
+          
+            <p>There are always spaces above and below the page. The following is the code.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang&#61;&#34;en&#34;&gt;
+
+&lt;head&gt;
+  &lt;meta charset&#61;&#34;UTF-8&#34;&gt;
+  &lt;meta name&#61;&#34;viewport&#34; content&#61;&#34;width&#61;device-width, initial-scale&#61;1.0, viewport-fit&#61;cover&#34;&gt;
+  &lt;link rel&#61;&#34;stylesheet&#34; href&#61;&#34;./index.css&#34;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;p&gt;Hellow World!&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<pre><code>html {
+  height: 100%;
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  background-color: aquamarine;
+}
+
+body {
+  margin: 0;
+}
+</code></pre>
+<p>The screenshot device is iPhone 12. In order to demonstrate more clearly, I set the <code>background-color</code>. I want to make the gradient fill full screen.</p>
+<p><img src="https://developer.apple.com/forums/content/attachment/9ebac6e9-76c6-48fa-9c17-1b0a7b75d97c" title="截屏2021-07-25 下午1.50.59.png" width="282" height="608" loading="lazy" data-lazy="true" /></p>
+<p><img src="https://developer.apple.com/forums/content/attachment/c0676fef-5105-46da-a2a3-f086fb6c08fb" title="截屏2021-07-25 下午1.33.32.png" width="2362" height="844" loading="lazy" data-lazy="true" /></p>
+          
+        </div>
+        
+          <div class="tags-container">
+            
+
+
+  <ul class="tags-component" aria-label="Post tags">
+    
+      <li class="list-item">
+        <div class="list-tag-item">
+          
+            <a class="tag" data-cy="tagTitle" href="/forums/tags/safari" rel="tag">
+              Safari
+            </a>
+              
+          
+        </div>
+      </li>
+    
+      <li class="list-item">
+        <div class="list-tag-item">
+          
+            <a class="tag" data-cy="tagTitle" href="/forums/tags/safari-extensions" rel="tag">
+              Safari Extensions
+            </a>
+              
+          
+        </div>
+      </li>
+    
+      <li class="list-item">
+        <div class="list-tag-item">
+          
+            <a class="tag" data-cy="tagTitle" href="/forums/tags/safari-and-web" rel="tag">
+              Safari and Web
+            </a>
+              
+          
+        </div>
+      </li>
+    
+      <li class="list-item">
+        <div class="list-tag-item">
+          
+            <a class="tag" data-cy="tagTitle" href="/forums/tags/wwdc21-10029" rel="tag">
+              wwdc21-10029
+            </a>
+              
+          
+        </div>
+      </li>
+    
+  </ul>
+
+
+          </div>
+        
+        
+      </div>
+    </div>
+
+    <div class="column-left">
+      
+<div class="votes-component question" data-action="voting-component"  data-post-id="685727021"  data-post-type="QUESTION" aria-label="Post statistics" role="group">
+  <div class="hidden votes-error-message" aria-live="polite" data-action="votes-error-box">
+    <span class="icon icon-before icon-exclamationsolid" aria-hidden="true">&nbsp;</span>
+    <span data-action="votes-error-message"></span>
+  </div>
+  
+  
+    
+      <a class="up-vote" type="button" href="/forums/login">
+        <span class="a11y">
+          
+            Up vote post of xuning0
+          
+        </span>
+      </a>
+    
+  
+  
+    
+      <a class="down-vote" type="button" href="/forums/login">
+        <span class="a11y">
+          
+            Down vote post of xuning0
+          
+        </span>
+      </a>
+    
+  
+    <div class="actions">
+    
+    
+      <span class="views">
+        
+          3.3k
+        
+        <span class="a11y">views</span>
+      </span>
+    
+    
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  
+    <div class="post-content-footer question">
+      
+
+
+<div class="metadata">
+  <div class="author-timestamp-wrapper">
+    <span id="replyname-685727021">
+    
+  Posted
+  
+    
+
+  <span class="postTime" data-action="timestamp" data-timestamp="1627283331007" ></span>
+
+
+  
+  by
+  
+    <div class="content-post-authorname">
+      
+        
+          
+            <img src="https://forums.developer.apple.com/forums/public/assets/avatars/SYSTEM_DEFAULT_AVATAR.svg" alt="" class="authorAvatar"/>
+          
+        
+        <a href="/forums/profile/xuning0" class="content-post-list-author-name">xuning0</a>
+      
+    </div>
+  
+
+
+    </span>
+  </div>
+  <div class="actions">
+  
+  
+  
+    <div class="content-post-copy">
+      
+
+<div data-action="copy-to-clipboard" data-author="xuning0" data-post-type="QUESTION">
+  
+
+<div class="tooltip-wrapper copy-post" data-action="tooltip" >
+  
+    
+      <button class="copy-to-clipboard-button copy-post" type="button" aria-describedby="copy-post-tooltip-685727021" data-action="copy-to-clipboard-button" data-url="/thread/685727" data-title="Safari 15 how to remove the spacing at top and bottom of a webpage ">
+        <span class="a11y" data-action="a11y-message">Copy to clipboard</span>
+      </button>
+    
+  
+  <div class="tooltip no-wrap "
+   id="copy-post-tooltip-685727021"
+  role="tooltip"
+  data-action="tooltip-content"
+   data-action-id="copy-post-tooltip"
+  
+   tabindex="-1">
+    Share this post
+  
+  </div>
+</div>
+
+  
+
+<div class="tooltip-wrapper question" data-action="tooltip" >
+  
+  <div class="tooltip no-wrap "
+   id="copied-tooltip-685727021"
+  role="tooltip"
+  data-action="tooltip-content"
+   data-action-id="copied-tooltip"
+  
+   tabindex="-1">
+    Copied to Clipboard
+  
+  </div>
+</div>
+
+</div>
+
+    </div>
+  
+  
+  
+</div>
+
+</div>
+
+      
+        <a class="button button-compact button-reduced reply-button " data-action="reply-button" href="/forums/login">
+          Reply
+        </a>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+<div class="comment-section" data-action="comment-section">
+  
+  
+    <a class="add-comment-button " type="button" data-action="add-comment-button" aria-label="Add a comment to There are always spaces above and below the page. The following is the code.
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang&#x3D;&quot;en&quot;&amp;gt;
+
+&amp;lt;head&amp;gt;
+  &amp;lt;meta charset&#x3D;&quot;UTF-8&quot;&amp;gt;
+  &amp;lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0, viewport-fit&#x3D;cover&quot;&amp;gt;
+  &amp;lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;./index.css&quot;&amp;gt;
+  &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+  &amp;lt;p&amp;gt;Hellow World!&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+
+&amp;lt;/html&amp;gt;
+
+html {
+  height: 100%;
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  background-color: aquamarine;
+}
+
+body {
+  margin: 0;
+}
+
+The screenshot device is iPhone 12. In order to demonstrate more clearly, I set the background-color. I want to make the gradient fill full screen." href="/forums/login">
+      Add a Comment
+    </a>
+  
+  <div class="comment-editor-wrapper-placeholder hidden" data-action="comment-editor-wrapper-placeholder" data-type="comment-editor-wrapper"></div>
+</div>
+</section>
+
+          </div>
+        
+        
+          <div class="answers" role="region" aria-labelledby="answers-title" id="answers-list">
+            
+            
+              <h2 class="answer-title" id="answers-title">Replies</h2>
+            
+            
+              
+
+<section
+  role="article"
+  
+   data-post-id="682850022" id="682850022"
+   data-post-type="ANSWER"
+  data-action="content-post"
+  class="content-post answer"
+  aria-labelledby="replyname-682850022"
+  aria-describedby="post-status-682850022
+    
+      
+    ">
+  <div class="hidden content-post-error-message" aria-live="polite" data-action="content-post-error-box">
+    <span class="icon icon-before icon-exclamationsolid" aria-hidden="true">&nbsp;</span>
+    <span data-action="content-post-error-message"></span>
+  </div>
+  
+  
+    
+                  
+                    
+                      
+                    
+                  
+                
+  
+  <div class="content ">
+    <div class="column-right ">
+      <div class="post">
+        <div class="post-content" data-post-id="682850022" tabindex="-1"  data-post-type="ANSWER" data-action="content-post-body-content">
+          
+            <p>Dealing with the same issue. Potentially they want us to rely on theme-color meta tag which is now immersive in Safari 15. Not sure that is true tho.</p>
+          
+        </div>
+        
+        
+          <div class="post-content-footer">
+            
+
+
+<div class="metadata">
+  <div class="author-timestamp-wrapper">
+    <span id="replyname-682850022">
+    
+  Posted
+  
+    
+
+  <span class="postTime" data-action="timestamp" data-timestamp="1627313039436" ></span>
+
+
+  
+  by
+  
+    <div class="content-post-authorname">
+      
+        
+          
+            <img src="https://forums.developer.apple.com/forums/public/assets/avatars/SYSTEM_DEFAULT_AVATAR.svg" alt="" class="authorAvatar"/>
+          
+        
+        <a href="/forums/profile/carlosj" class="content-post-list-author-name">carlosj</a>
+      
+    </div>
+  
+
+
+    </span>
+  </div>
+  <div class="actions">
+  
+  
+  
+    <div class="content-post-copy">
+      
+
+<div data-action="copy-to-clipboard" data-author="carlosj" data-post-type="ANSWER">
+  
+
+<div class="tooltip-wrapper copy-post" data-action="tooltip" >
+  
+    
+      <button class="copy-to-clipboard-button copy-post" type="button" aria-describedby="copy-post-tooltip-682850022" data-action="copy-to-clipboard-button" data-url="/thread/685727?answerId&#x3D;682850022#682850022" data-title="Safari 15 how to remove the spacing at top and bottom of a webpage ">
+        <span class="a11y" data-action="a11y-message">Copy to clipboard</span>
+      </button>
+    
+  
+  <div class="tooltip no-wrap "
+   id="copy-post-tooltip-682850022"
+  role="tooltip"
+  data-action="tooltip-content"
+   data-action-id="copy-post-tooltip"
+  
+   tabindex="-1">
+    Share this post
+  
+  </div>
+</div>
+
+  
+
+<div class="tooltip-wrapper answer" data-action="tooltip" >
+  
+  <div class="tooltip no-wrap "
+   id="copied-tooltip-682850022"
+  role="tooltip"
+  data-action="tooltip-content"
+   data-action-id="copied-tooltip"
+  
+   tabindex="-1">
+    Copied to Clipboard
+  
+  </div>
+</div>
+
+</div>
+
+    </div>
+  
+  
+    
+  
+  
+</div>
+
+</div>
+
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="column-left">
+      
+<div class="votes-component answer" data-action="voting-component"  data-post-id="682850022"  data-post-type="ANSWER" aria-label="Post statistics" role="group">
+  <div class="hidden votes-error-message" aria-live="polite" data-action="votes-error-box">
+    <span class="icon icon-before icon-exclamationsolid" aria-hidden="true">&nbsp;</span>
+    <span data-action="votes-error-message"></span>
+  </div>
+  
+  
+    
+      <a class="up-vote" type="button" href="/forums/login">
+        <span class="a11y">
+          
+            Up vote reply of carlosj
+          
+        </span>
+      </a>
+    
+  
+  
+    
+      <a class="down-vote" type="button" href="/forums/login">
+        <span class="a11y">
+          
+            Down vote reply of carlosj
+          
+        </span>
+      </a>
+    
+  
+    <div class="actions">
+    
+      
+      
+        
+      
+    
+    
+    
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+<div class="comment-section" data-action="comment-section">
+  
+    <ul class="comments-list" data-action="comments-list">
+      
+        
+          <li class="comment-list-item" data-action="comment-item" data-action-id="3725025">
+  <div class="comment">
+    <div class="vote">
+      <button class="upvote-button" aria-label="Vote xuning0 reply - current vote 0" type="button" data-action="upvote-comment-button" data-action-id="3725025"
+      disabled>
+        <span class="upvote-icon" data-action="upvote-comment-icon"></span>
+        <span class="a11y">votes</span>
+        <span data-action="votes" data-votes="0">
+          
+            0
+          
+        </span>
+      </button>
+    </div>
+    <div class="details">
+      <div class="text">
+        <p class="inline">Using <code>theme-color</code> is indeed a good choice for most web pages, but it looks very strange for web pages that require a full-screen gradient background <strong>: (</strong></p>
+        
+
+
+<span class="post-content-footer comment">
+  <div class="author-timestamp-wrapper">
+    
+    
+  <span class="em-dash">&#8212;</span>
+  
+    <div class="content-post-authorname">
+      
+        
+          
+            <img src="https://forums.developer.apple.com/forums/public/assets/avatars/SYSTEM_DEFAULT_AVATAR.svg" alt="" class="authorAvatar"/>
+          
+        
+        <a href="/forums/profile/xuning0" class="content-post-list-author-name">xuning0</a>
+      
+    </div>
+  
+  
+    
+
+  <span class="postTime" data-action="timestamp" data-timestamp="1627315534887" ></span>
+
+
+  
+
+
+    
+  </div>
+  <div class="actions">
+  
+  
+  
+  
+  
+</div>
+
+</span>
+
+      </div>
+    </div>
+  </div>
+
+  
+  
+</li>
+
+        
+      
+      
+    </ul>
+  
+  
+    <a class="add-comment-button " type="button" data-action="add-comment-button" aria-label="Add a comment to Dealing with the same issue. Potentially they want us to rely on theme-color meta tag which is now immersive in Safari 15. Not sure that is true tho." href="/forums/login">
+      Add a Comment
+    </a>
+  
+  <div class="comment-editor-wrapper-placeholder hidden" data-action="comment-editor-wrapper-placeholder" data-type="comment-editor-wrapper"></div>
+</div>
+</section>
+
+            
+              
+
+<section
+  role="article"
+  
+   data-post-id="683375022" id="683375022"
+   data-post-type="ANSWER"
+  data-action="content-post"
+  class="content-post answer"
+  aria-labelledby="replyname-683375022"
+  aria-describedby="post-status-683375022
+    
+      
+    ">
+  <div class="hidden content-post-error-message" aria-live="polite" data-action="content-post-error-box">
+    <span class="icon icon-before icon-exclamationsolid" aria-hidden="true">&nbsp;</span>
+    <span data-action="content-post-error-message"></span>
+  </div>
+  
+  
+    
+                  
+                    
+                      
+                    
+                  
+                
+  
+  <div class="content ">
+    <div class="column-right ">
+      <div class="post">
+        <div class="post-content" data-post-id="683375022" tabindex="-1"  data-post-type="ANSWER" data-action="content-post-body-content">
+          
+            <p>To extend in to the safe area you can use <code>min-height: -webkit-fill-available;</code>. Note that this will also extened in to the notch when in landscape so you may want to use the <code>safe-area-inset-*</code> env variables, e.g. <code>padding-left: env(safe-area-inset-left);</code></p>
+          
+        </div>
+        
+        
+          <div class="post-content-footer">
+            
+
+
+<div class="metadata">
+  <div class="author-timestamp-wrapper">
+    <span id="replyname-683375022">
+    
+  Posted
+  
+    
+
+  <span class="postTime" data-action="timestamp" data-timestamp="1627759158574" ></span>
+
+
+  
+  by
+  
+    <div class="content-post-authorname">
+      
+        
+          
+            <img src="https://forums.developer.apple.com/forums/public/assets/avatars/SYSTEM_DEFAULT_AVATAR.svg" alt="" class="authorAvatar"/>
+          
+        
+        <a href="/forums/profile/JosephDuffy" class="content-post-list-author-name">JosephDuffy</a>
+      
+    </div>
+  
+
+
+    </span>
+  </div>
+  <div class="actions">
+  
+  
+  
+    <div class="content-post-copy">
+      
+
+<div data-action="copy-to-clipboard" data-author="JosephDuffy" data-post-type="ANSWER">
+  
+
+<div class="tooltip-wrapper copy-post" data-action="tooltip" >
+  
+    
+      <button class="copy-to-clipboard-button copy-post" type="button" aria-describedby="copy-post-tooltip-683375022" data-action="copy-to-clipboard-button" data-url="/thread/685727?answerId&#x3D;683375022#683375022" data-title="Safari 15 how to remove the spacing at top and bottom of a webpage ">
+        <span class="a11y" data-action="a11y-message">Copy to clipboard</span>
+      </button>
+    
+  
+  <div class="tooltip no-wrap "
+   id="copy-post-tooltip-683375022"
+  role="tooltip"
+  data-action="tooltip-content"
+   data-action-id="copy-post-tooltip"
+  
+   tabindex="-1">
+    Share this post
+  
+  </div>
+</div>
+
+  
+
+<div class="tooltip-wrapper answer" data-action="tooltip" >
+  
+  <div class="tooltip no-wrap "
+   id="copied-tooltip-683375022"
+  role="tooltip"
+  data-action="tooltip-content"
+   data-action-id="copied-tooltip"
+  
+   tabindex="-1">
+    Copied to Clipboard
+  
+  </div>
+</div>
+
+</div>
+
+    </div>
+  
+  
+    
+  
+  
+</div>
+
+</div>
+
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="column-left">
+      
+<div class="votes-component answer" data-action="voting-component"  data-post-id="683375022"  data-post-type="ANSWER" aria-label="Post statistics" role="group">
+  <div class="hidden votes-error-message" aria-live="polite" data-action="votes-error-box">
+    <span class="icon icon-before icon-exclamationsolid" aria-hidden="true">&nbsp;</span>
+    <span data-action="votes-error-message"></span>
+  </div>
+  
+  
+    
+      <a class="up-vote" type="button" href="/forums/login">
+        <span class="a11y">
+          
+            Up vote reply of JosephDuffy
+          
+        </span>
+      </a>
+    
+  
+  
+    
+      <a class="down-vote" type="button" href="/forums/login">
+        <span class="a11y">
+          
+            Down vote reply of JosephDuffy
+          
+        </span>
+      </a>
+    
+  
+    <div class="actions">
+    
+      
+      
+        
+      
+    
+    
+    
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+<div class="comment-section" data-action="comment-section">
+  
+    <ul class="comments-list" data-action="comments-list">
+      
+        
+          <li class="comment-list-item" data-action="comment-item" data-action-id="4069025">
+  <div class="comment">
+    <div class="vote">
+      <button class="upvote-button" aria-label="Vote xuning0 reply - current vote 0" type="button" data-action="upvote-comment-button" data-action-id="4069025"
+      disabled>
+        <span class="upvote-icon" data-action="upvote-comment-icon"></span>
+        <span class="a11y">votes</span>
+        <span data-action="votes" data-votes="0">
+          
+            0
+          
+        </span>
+      </button>
+    </div>
+    <div class="details">
+      <div class="text">
+        <p class="inline">Have you tried it in Safari 15? Doesn&#39;t seem to take effect.</p>
+        
+
+
+<span class="post-content-footer comment">
+  <div class="author-timestamp-wrapper">
+    
+    
+  <span class="em-dash">&#8212;</span>
+  
+    <div class="content-post-authorname">
+      
+        
+          
+            <img src="https://forums.developer.apple.com/forums/public/assets/avatars/SYSTEM_DEFAULT_AVATAR.svg" alt="" class="authorAvatar"/>
+          
+        
+        <a href="/forums/profile/xuning0" class="content-post-list-author-name">xuning0</a>
+      
+    </div>
+  
+  
+    
+
+  <span class="postTime" data-action="timestamp" data-timestamp="1627792385407" ></span>
+
+
+  
+
+
+    
+  </div>
+  <div class="actions">
+  
+  
+  
+  
+  
+</div>
+
+</span>
+
+      </div>
+    </div>
+  </div>
+
+  
+  
+</li>
+
+        
+      
+      
+    </ul>
+  
+  
+    <a class="add-comment-button " type="button" data-action="add-comment-button" aria-label="Add a comment to To extend in to the safe area you can use min-height: -webkit-fill-available;. Note that this will also extened in to the notch when in landscape so you may want to use the safe-area-inset-* env variables, e.g. padding-left: env(safe-area-inset-left);" href="/forums/login">
+      Add a Comment
+    </a>
+  
+  <div class="comment-editor-wrapper-placeholder hidden" data-action="comment-editor-wrapper-placeholder" data-type="comment-editor-wrapper"></div>
+</div>
+</section>
+
+            
+              
+
+<section
+  role="article"
+  
+   data-post-id="705688022" id="705688022"
+   data-post-type="ANSWER"
+  data-action="content-post"
+  class="content-post answer"
+  aria-labelledby="replyname-705688022"
+  aria-describedby="post-status-705688022
+    
+      
+    ">
+  <div class="hidden content-post-error-message" aria-live="polite" data-action="content-post-error-box">
+    <span class="icon icon-before icon-exclamationsolid" aria-hidden="true">&nbsp;</span>
+    <span data-action="content-post-error-message"></span>
+  </div>
+  
+  
+    
+                  
+                    
+                      
+                    
+                  
+                
+  
+  <div class="content ">
+    <div class="column-right ">
+      <div class="post">
+        <div class="post-content" data-post-id="705688022" tabindex="-1"  data-post-type="ANSWER" data-action="content-post-body-content">
+          
+            <p>Hi guys,</p>
+<p>Bit late to the party, but I thought I&#39;d post my solution anyways... With no less than 193 pixels I got the design just right on my iPhone 12 mini:</p>
+<pre><code>body { height: calc(100% &#43; 193px); }
+</code></pre>
+<p><img src="https://developer.apple.com/forums/content/attachment/589497ef-dc6b-4953-b539-b142e0006b1d" title="out4.png" width="834" height="300" loading="lazy" data-lazy="true" /></p>
+<p>Cheers!</p>
+<hr />
+<p><strong>EDIT</strong> - I had set the viewport way off... I used &#34;initial-scale&#61;0.42&#34;. My bad! Just tried it with normal scale, and Safari fills te page and window nicely.</p>
+          
+        </div>
+        
+        
+          <div class="post-content-footer">
+            
+
+
+<div class="metadata">
+  <div class="author-timestamp-wrapper">
+    <span id="replyname-705688022">
+    
+  Posted
+  
+    
+
+  <span class="postTime" data-action="timestamp" data-timestamp="1645680538948" ></span>
+
+
+  
+  by
+  
+    <div class="content-post-authorname">
+      
+        
+          
+            <img src="https://forums.developer.apple.com/forums/public/assets/avatars/106.png" alt="" class="authorAvatar"/>
+          
+        
+        <a href="/forums/profile/rmf123" class="content-post-list-author-name">rmf123</a>
+      
+    </div>
+  
+
+
+    </span>
+  </div>
+  <div class="actions">
+  
+  
+  
+    <div class="content-post-copy">
+      
+
+<div data-action="copy-to-clipboard" data-author="rmf123" data-post-type="ANSWER">
+  
+
+<div class="tooltip-wrapper copy-post" data-action="tooltip" >
+  
+    
+      <button class="copy-to-clipboard-button copy-post" type="button" aria-describedby="copy-post-tooltip-705688022" data-action="copy-to-clipboard-button" data-url="/thread/685727?answerId&#x3D;705688022#705688022" data-title="Safari 15 how to remove the spacing at top and bottom of a webpage ">
+        <span class="a11y" data-action="a11y-message">Copy to clipboard</span>
+      </button>
+    
+  
+  <div class="tooltip no-wrap "
+   id="copy-post-tooltip-705688022"
+  role="tooltip"
+  data-action="tooltip-content"
+   data-action-id="copy-post-tooltip"
+  
+   tabindex="-1">
+    Share this post
+  
+  </div>
+</div>
+
+  
+
+<div class="tooltip-wrapper answer" data-action="tooltip" >
+  
+  <div class="tooltip no-wrap "
+   id="copied-tooltip-705688022"
+  role="tooltip"
+  data-action="tooltip-content"
+   data-action-id="copied-tooltip"
+  
+   tabindex="-1">
+    Copied to Clipboard
+  
+  </div>
+</div>
+
+</div>
+
+    </div>
+  
+  
+    
+  
+  
+</div>
+
+</div>
+
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="column-left">
+      
+<div class="votes-component answer" data-action="voting-component"  data-post-id="705688022"  data-post-type="ANSWER" aria-label="Post statistics" role="group">
+  <div class="hidden votes-error-message" aria-live="polite" data-action="votes-error-box">
+    <span class="icon icon-before icon-exclamationsolid" aria-hidden="true">&nbsp;</span>
+    <span data-action="votes-error-message"></span>
+  </div>
+  
+  
+    
+      <a class="up-vote" type="button" href="/forums/login">
+        <span class="a11y">
+          
+            Up vote reply of rmf123
+          
+        </span>
+      </a>
+    
+  
+  
+    
+      <a class="down-vote" type="button" href="/forums/login">
+        <span class="a11y">
+          
+            Down vote reply of rmf123
+          
+        </span>
+      </a>
+    
+  
+    <div class="actions">
+    
+      
+      
+        
+      
+    
+    
+    
+    
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+<div class="comment-section" data-action="comment-section">
+  
+  
+    <a class="add-comment-button " type="button" data-action="add-comment-button" aria-label="Add a comment to Hi guys,
+Bit late to the party, but I thought I&#x27;d post my solution anyways... With no less than 193 pixels I got the design just right on my iPhone 12 mini:
+body { height: calc(100% + 193px); }
+
+
+Cheers!
+
+EDIT - I had set the viewport way off... I used &quot;initial-scale&#x3D;0.42&quot;. My bad! Just tried it with normal scale, and Safari fills te page and window nicely." href="/forums/login">
+      Add a Comment
+    </a>
+  
+  <div class="comment-editor-wrapper-placeholder hidden" data-action="comment-editor-wrapper-placeholder" data-type="comment-editor-wrapper"></div>
+</div>
+</section>
+
+            
+          </div>
+        
+        
+        
+        
+      
+      
+
+      <script src="https://forums.developer.apple.com/forums/public/compiled/pages/thread.js" type="text/javascript" defer></script>
+      
+        
+          <script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "QAPage",
+	"url": "http://forums.developer.apple.com/forums/thread/685727",
+	"mainEntity": {
+		"@type": "Question",
+		"name": "Safari 15 how to remove the spacing at top and bottom of a webpage ",
+    "text": "There are always spaces above and below the page. The following is the code.
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"&gt;
+  &lt;link rel="stylesheet" href="./index.css"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;p&gt;Hellow World!&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+html {
+  height: 100%;
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  background-color: aquamarine;
+}
+
+body {
+  margin: 0;
+}
+
+The screenshot device is iPhone 12. In order to demonstrate more clearly, I set the background-color. I want to make the gradient fill full screen.", 
+		"dateCreated": "Feb 23, 2022 09:44 PM",
+    "answerCount": "3",
+		"upvoteCount": "0",
+		"author": {
+			"@type": "Person",
+			"name": "xuning0"
+    }
+    ,
+      "suggestedAnswer": [
+        
+          {
+            "@type": "Answer",
+            "text": "Dealing with the same issue. Potentially they want us to rely on theme-color meta tag which is now immersive in Safari 15. Not sure that is true tho.",
+            "dateCreated": "Jul 26, 2021 08:23 AM",
+            "upvoteCount": "0",
+            "url": "http://forums.developer.apple.com/forums/thread/685727?answerId=682850022#682850022",
+            "author": {
+              "@type": "Person",
+              "name": "carlosj"
+            }
+          },
+        
+          {
+            "@type": "Answer",
+            "text": "To extend in to the safe area you can use min-height: -webkit-fill-available;. Note that this will also extened in to the notch when in landscape so you may want to use the safe-area-inset-* env variables, e.g. padding-left: env(safe-area-inset-left);",
+            "dateCreated": "Jul 31, 2021 12:19 PM",
+            "upvoteCount": "0",
+            "url": "http://forums.developer.apple.com/forums/thread/685727?answerId=683375022#683375022",
+            "author": {
+              "@type": "Person",
+              "name": "JosephDuffy"
+            }
+          },
+        
+          {
+            "@type": "Answer",
+            "text": "Hi guys,
+Bit late to the party, but I thought I&#x27;d post my solution anyways... With no less than 193 pixels I got the design just right on my iPhone 12 mini:
+body { height: calc(100% + 193px); }
+
+
+Cheers!
+
+EDIT - I had set the viewport way off... I used &quot;initial-scale&#x3D;0.42&quot;. My bad! Just tried it with normal scale, and Safari fills te page and window nicely.",
+            "dateCreated": "Feb 23, 2022 09:44 PM",
+            "upvoteCount": "0",
+            "url": "http://forums.developer.apple.com/forums/thread/685727?answerId=705688022#705688022",
+            "author": {
+              "@type": "Person",
+              "name": "rmf123"
+            }
+          }
+        
+      ]
+    
+	}
+}
+</script>
+
+        
+      
+    </main>
+  
+    </div>
+
+    <footer id="footer" class="footer" role="contentinfo" aria-labelledby="footer-label">
+
+    <div class="footer-content">
+        <h2 class="footer-label" id="footer-label">Developer Footer</h2>
+        <div class="disclaimer">This site contains user submitted content, comments and opinions and is for informational purposes only. Apple disclaims any and all liability for the acts, omissions and conduct of any third parties in connection with or related to your use of the site. All postings and use of the content on this site are subject to the <a class="disclaimer-link" href="https://developer.apple.com/terms/apple-developer-forums/Apple-Developer-Forums-Participation-Agreement-20200618.pdf" target="_blank" aria-label="Apple Developer Forums Participation Agreement (Opens in new window)">Apple Developer Forums Participation Agreement</a>.</div>
+        <developer-breadcrumbs>
+          <li>Forums</li>
+        </developer-breadcrumbs>
+        <nav class="footer-directory" aria-label="Apple Developer Directory" role="navigation">
+	<!--googleoff: all-->
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-platform" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-platform">
+				<h3 class="footer-directory-column-section-title">Platforms</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-platform" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/ios/">iOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/ipados/">iPadOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/macos/">macOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/tvos/">tvOS</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/watchos/">watchOS</a></li>
+			</ul>
+		</div>
+
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-tools" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-tools">
+				<h3 class="footer-directory-column-section-title">Tools</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-tools" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+        <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/swift/">Swift</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/swiftui/">SwiftUI</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/sf-symbols/">SF Symbols</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/swift-playgrounds/">Swift Playgrounds</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/testflight/">TestFlight</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/xcode/">Xcode</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/xcode-cloud/">Xcode Cloud</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-topics" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-topics">
+				<h3 class="footer-directory-column-section-title">Topics &amp; Technologies</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-topics" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/accessibility/">Accessibility</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/accessories/">Accessories</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/app-extensions/">App Extensions</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/app-store/">App Store</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/audio/">Audio &amp; Video</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/augmented-reality/">Augmented Reality</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/business/">Business</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/design/">Design</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/distribute/">Distribution</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/education/">Education</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/fonts/">Fonts</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/games/">Games</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/health-fitness/">Health &amp; Fitness</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/in-app-purchase/">In-App Purchase</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/localization/">Localization</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/maps/">Maps &amp; Location</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/machine-learning/">Machine Learning</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/security/">Security</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/safari/">Safari &amp; Web</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-resources" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-resources">
+				<h3 class="footer-directory-column-section-title">Resources</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-resources" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/documentation/">Documentation</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/learn/curriculum/">Curriculum</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/download/">Downloads</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/forums/">Forums</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/videos/">Videos</a></li>
+			</ul>
+		</div>
+
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-support" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-support">
+				<h3 class="footer-directory-column-section-title">Support</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-support" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/support/articles/">Support Articles</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/contact/">Contact Us</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/bug-reporting/">Bug Reporting</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/system-status/">System Status</a></li>
+			</ul>
+		</div>
+
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-account" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-account">
+				<h3 class="footer-directory-column-section-title">Account</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-account" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/account/">Apple Developer</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://appstoreconnect.apple.com/">App Store Connect</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/account/ios/certificate/">Certificates, IDs, &amp; Profiles</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://feedbackassistant.apple.com/">Feedback Assistant</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer-directory-column">
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-programs" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-programs">
+				<h3 class="footer-directory-column-section-title">Programs</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-programs" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/programs/">Apple Developer Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/programs/enterprise/">Apple Developer Enterprise Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/app-store/small-business-program/">App Store Small Business Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://mfi.apple.com/">MFi Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/programs/news-partner/">News Partner Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/programs/video-partner/">Video Partner Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/security-bounty/">Security Bounty Program</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/programs/security-research-device/">Security Research Device Program</a></li>
+			</ul>
+		</div>
+
+		<input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-events" />
+		<div class="footer-directory-column-section">
+			<label class="footer-directory-column-section-label" for="footer-directory-column-section-state-events">
+				<h3 class="footer-directory-column-section-title">Events</h3>
+			</label>
+			<a href="#footer-directory-column-section-state-events" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+			<a href="#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+			<ul class="footer-directory-column-section-list">
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/accelerator/">App Accelerators</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/app-store/app-store-awards/">App Store Awards</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/design/awards/">Apple Design Awards</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/learn/experts/#academies">Apple Developer Academies</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/entrepreneur-camp/">Entrepreneur Camp</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/tech-talks/">Tech Talks</a></li>
+				<li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/wwdc/">WWDC</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--googleon: all-->
+</nav>
+  <section class="footer-mini">
+    <div class="footer-mini-news">To view the latest developer news, visit <a href="https://developer.apple.com/news/">News and Updates</a>.</div>
+    <div class="footer-mini-legal">
+        <div class="footer-mini-legal-copyright">Copyright ©  <script>document.write(new Date().getFullYear());</script> Apple Inc. All rights reserved.</div>
+        <div class="footer-mini-legal-links">
+            <a class="footer-mini-legal-link" href="https://www.apple.com/legal/internet-services/terms/site.html">Terms of Use</a>
+            <a class="footer-mini-legal-link" href="https://www.apple.com/legal/privacy/en-ww/">Privacy Policy</a>
+            <a class="footer-mini-legal-link" href="https://developer.apple.com/terms/">License Agreements</a>
+        </div>
+    </div>
+  </section>
+    </div>
+</footer>
+
+
+    <script>
+  var _store = {
+    'lang': 'en',
+    'basePath': '/forums',
+    'cdnPrefix': 'https://forums.developer.apple.com/forums',
+    'ipIdentifierPrefix': 'https://forums.developer.apple.com/forums',
+    'token': 'anonymous',
+    'user': {
+      'loggedIn': '',
+      'userId': '',
+      'nickname': '',
+      'role':  'regular' ,
+    },
+    '_config': {
+      "ui.subNav.corporateLoginEnabled": 'true'
+      ,'ui.subNav.corporateLoginPath': '/ilogin'
+      ,"ui.mapKitJS.scriptURL": 'https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js'
+      ,"ui.mapKitJS.token": 'TOKEN'
+      ,"ui.search.filters.sortBy.relevancy.urlParamValue": 'relevance'
+      ,"ui.search.filters.sortBy.newestFirst.urlParamValue": 'newest'
+      ,"ui.search.filters.sortBy.lastUpdated.urlParamValue": 'lastUpdated'
+      ,"ui.search.filters.sortBy.oldestFirst.urlParamValue": 'oldest'
+      ,"ui.post.body.urlAllowList": 'apple.com,stackoverflow.com,swift.org,example.com,gc.apple.com,static.gc.apple.com,knowledge.digicert.com,github.com,digicert.com,openradar.me,icloud.com,webkit.org,wikipedia.org,ietf.org,developer.mozilla.org,researchandcare.org,apple.github.io,readme.io,box.com,unity3d.com,unrealengine.com,gitlab.com,whatwg.org,w3.org,wikiquote.org,fidoalliance.org'
+      ,"ui.post.body.profileBaseUrl": 'https://developer.apple.com/forums/profile/'
+      ,"ui.featureFlag.codeHighlight.enableTable": 'true'
+      ,"ui.search.filters.sortBy.urlParamName": 'sortBy'
+      ,"ui.search.filters.filterBy.urlParamName": 'filterBy'
+      ,"ui.subNav.search.liveErrorValidation": 'false'
+      ,"ui.threadPage.voting.allowRemoveSolved": 'false'
+      ,"ui.common.maxAuthorEditTime": '3600000'
+      ,"ui.featureFlag.content.convertPlainText2Url": 'true'
+      ,"ui.featureFlag.content.convertFeedbackAssistantToUrls": 'true'
+      ,"ui.featureFlag.content.enableEmoticons": 'false'
+      ,"ui.featureFlag.content.enableEmojis": 'true'
+      ,"ui.featureFlag.content.enableImagePreview": 'false'
+      ,"ui.featureFlag.content.enableUserMentions": 'true'
+      ,"ui.neighbor.url": 'https://supportmetrics.apple.com/content/services/stats'
+
+      
+        ,"ui.adminUrl.contentManagement": 'https://devforums-admin.prz.apple.com/?login&#x3D;true#/content-management/en/detail/'
+        // Thread page actions
+        ,"ui.reporting.reputationType.spam": 'SPAM'
+        ,"ui.reporting.reputationType.inappropriateAbusive": 'ABUSE'
+        ,"ui.reporting.reputationType.duplicatePost": 'DUPLICATE_POST'
+        ,"ui.reporting.reputationType.other": 'GENERAL_ABUSE'
+        ,"ui.threadPage.reporting.allowReportOnce": 'true'
+      
+
+      
+    },
+    '_i18n': {
+      // popup
+      'common.popup.close': 'Close dialog'
+
+      // a11y
+      ,'common.dropdown.a11y.contentLoading': 'Content Loading'
+
+      // title postfix
+      ,'common.titlePostfix': 'Apple Developer Forums'
+
+      // Timestamps
+      ,'common.timestamp.justNow': 'less than a minute'
+      ,'common.timestamp.minuteAgo': '1 minute'
+      ,'common.timestamp.minutesAgo': '{0} minutes'
+      ,'common.timestamp.hourAgo': '1 hour'
+      ,'common.timestamp.hoursAgo': '{0} hours'
+      ,'common.timestamp.dayAgo': '1 day'
+      ,'common.timestamp.daysAgo': '{0} days'
+      ,'common.timestamp.weekAgo': '1 week'
+      ,'common.timestamp.weeksAgo': '{0} weeks'
+      ,'common.timestamp.monthAgo': '1 month'
+      ,'common.timestamp.monthsAgo': '{0} months'
+      ,'common.timestamp.yearAgo': '1 year'
+      ,'common.timestamp.yearsAgo': '{0} years'
+      ,'common.timestamp.ago': '{0} ago'
+
+      // Pagination
+      ,'common.pagination.page': 'Page {0}'
+      ,'common.pagination.pageOf': 'Page {0} of {1}'
+      ,'common.pagination.pageOfMobile': 'Page {0}/{1}'
+
+
+      
+
+      
+
+      ,"common.nav.signIn.corporate": 'Sign in corporate'
+
+      // Post Creation
+      ,"createPost.select.a11y": 'createPost.select.a11y'
+      ,"createPost.notification.text": 'We saved the content from your last session.'
+      ,"createPost.notification.link": 'Continue this post where you left off.'
+
+      
+      ,"search.query.invalid.empty": 'Please enter your search query'
+      ,"common.search.placeholder": 'Search by keywords or tags'
+
+      
+
+      // Registration
+      ,"signup.username.blocked.n.profanity.words": 'You have included content in your nickname that is not permitted.'
+      ,"signup.username.blocked.words": 'You have included content in your nickname that is not permitted.'
+      ,"signup.username.maxLength.invalid": 'Usernames must be between 3 and 36 characters in length.'
+      ,"signup.username.minLength.invalid": 'Usernames must be between 3 and 36 characters in length.'
+      ,"signup.username.invalid.characters": 'Usernames must contain at least one alphanumeric character and may only contain numerals, upper or lower case Roman letters, dash (-), and underscore (_).'
+      ,"signup.username.taken": 'This username already exists.'
+      ,"signup.username.space": 'Usernames must contain at least one alphanumeric character and may only contain numerals, upper or lower case Roman letters, dash (-), and underscore (_).'
+
+      
+        // Thread page actions
+        ,"thread.common.a11y.votes": 'votes'
+        ,"common.error.general.retry": 'Please try again in a few minutes.'
+        ,"thread.common.votes": 'votes'
+        ,"thread.common.votes.error": 'Votes can be updated within 15 minutes. You can no longer update your vote.'
+        ,"thread.common.solved.error": 'Unable to send rating'
+        ,"thread.actions.copyToClipboard.a11yMessage.copy": 'Copy {0} {1}'
+        ,"thread.actions.copyToClipboard.a11yMessage.share": 'Share {0} {1}'
+        ,"common.actions.reported.error": 'You must have 50 or more reputation points to report content.'
+        ,"thread.appleRecommended.mark.popup.title": 'You’re about to recommend an reply.'
+        ,"thread.appleRecommended.unmark.popup.title": 'You’re about to unmark a recommendation.'
+        ,"thread.appleRecommended.mark.popup.message": 'Once you recommend this reply, it will show as Apple Recommended on the forums and a notification email may be sent to the author.'
+        ,"thread.appleRecommended.unmark.popup.message": 'Once you unmark this reply, it will no longer show as Apple Recommended on the forums.'
+        ,"thread.pinnedPost.mark.popup.title": 'Pinning Post'
+        ,"thread.pinnedPost.mark.popup.message": 'You’re about to pin this post. Pinned posts will appear in the Pinned Posts section of the home page. You can unpin a post by clicking the pin icon next to the post on thread pages.'
+        ,"thread.pinnedPost.limit.error.message": 'Cannot pin more than {0} posts. You’ll need to unpin an existing pinned post before you can pin this post.'
+        ,"thread.pinnedPost.unmark.popup.title": 'Unpinning Post'
+        ,"thread.pinnedPost.unmark.popup.message": 'You’re about to unpin this post. Unpinned posts will be removed  from the Pinned Posts section of the home page. You can pin a post by clicking the pin icon next to the post on thread pages.'
+        ,"thread.pinnedTag.mark.popup.title": 'Pinning A Post'
+        ,"thread.pinnedTag.mark.popup.message": 'You’re about to pin this post. Pinned posts will appear in the Pinned Posts section of the tag landing page of the tag you’ve selected. You can unpin a post by clicking the pin icon embedded in tags post on thread pages. '
+        ,"thread.pinnedTag.unmark.popup.title": 'Unpinning A Post'
+        ,"thread.pinnedtag.unmark.popup.message": 'You’re about to unpin this post. Unpinned posts will be removed from the Pinned Posts section of the tag landing page of the selected tag. You can pin a post by clicking the pin icon embedded in tags post on thread pages.'
+      
+
+      // Error codes
+      ,"error.accessDenied.pageTitle": 'Error - Access Denied'
+      ,"error.accessDenied.header": 'Content not found'
+      ,"error.accessDenied.message": 'This content does not exist.'
+      ,"error.unAuthorized.pageTitle": 'Error - Unauthorized'
+      ,"error.unAuthorized.header": 'Unauthorized'
+      ,"error.unAuthorized.message": 'Access to this place or content is restricted. If you think this is a mistake, please contact your administrator or the person who directed you here.'
+      ,"error.footer": '&lt;p class&#x3D;&quot;extra-message&quot;&gt;Please visit the main page of &lt;a href&#x3D;&quot;/forums/&quot;&gt;Apple Developer Forums&lt;/a&gt; for links to discussion areas.&lt;/p&gt;'
+      ,"common.error.serviceDown": 'We encountered an error while loading this data. Please try again later.'
+      ,"common.error.componentAjaxFailed": 'An error occurred while loading this information. Please reload the page or try again later.'
+      ,"common.error.pageAjaxFailed": 'An error occurred while loading this page. Please reload the page or try again later.'
+
+      // Create Post
+      ,"tags.a11y.options.totally": 'Number of available tags is {0}'
+      ,"tags.a11y.options.select": '{0} is selected'
+      ,"tags.a11y.options.remove": '{0} is removed'
+    },
+    i18n: function(key) {
+      if (key === 'all') return this._i18n;
+      else if (this._i18n[key]) return this._i18n[key];
+      return key;
+    },
+    config: function(key) {
+      if (key === 'all') return this._config;
+      else if (this._config[key]) return this._config[key];
+      return key;
+    }
+  };
+</script>
+
+
+    
+      <input id="http-request-id" type="text" style="display:none;" value="c8e26e57f3ee53930e7bd3869eb2cd02"/>
+    
+
+    <script src="https://forums.developer.apple.com/forums/public/compiled/decorator.js" type="text/javascript" defer></script>
+
+    <!-- developer.apple.com metrics -->
+    
+      <script>
+          /* RSID: */
+          var s_account="awdappledeveloper"
+      </script>
+      <script src="https://developer.apple.com/assets/metrics/scripts/analytics.js"></script>
+      <script>
+          s.pageName= AC && AC.Tracking && AC.Tracking.pageName();
+          s.channel="www.forums.developer";
+          /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+          var s_code=s.t();if(s_code)document.write(s_code)
+      </script>
+    
+    <!-- /metrics -->
+    <script type="text/javascript" async src="//developer.apple.com/assets/scripts/ac-globalnav.built.js"></script>
+<script type="text/javascript" async src="//developer.apple.com/assets/scripts/search.js"></script>
+
+    <script type="text/javascript" async src="//developer.apple.com/assets/scripts/DeveloperBreadcrumbs.js"></script>
+
+  </body>
+</html>
