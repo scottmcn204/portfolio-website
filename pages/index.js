@@ -19,6 +19,8 @@ export default function Home() {
   const handleClick = () => {
     ref?.current.scrollIntoView({behavior: 'smooth'});
   };
+  const [visible, setVisible] = useState(false);
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -102,14 +104,21 @@ export default function Home() {
 
           </p>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1 max-w-sm mx-auto relative'>
+            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible(!visible)}>
+              {visible && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade'>
+                <p className=' text-white text-center mt-16 mx-2 text-sm'>This app was created using the swift programming language along with a MVVM architecture.
+                  It allows the user to create and store rally callouts to be used in rally races. This solves a common problem for rally navigators where it can 
+                  be difficult to write down rally callouts and expensive to purchase them. This project helped in my understanding of effective UI creation, data manipulation
+                  and the use of APIs specifically Mapkit. I also gained experience in working alongside advisors, in this case in the field of rally driving </p>
+                <a href='https://github.com/scottmcn204/Rally' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-14 p-3 rounded-lg'>View the Code</a>
+                </div>}
               <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>RallyNavigator App</h2>
-              <Image src={rally} className='rounded-3xl object-cover opacity-80 shadow-2xl'  width={'100%'} height={'100%'} alt="image"/>
-            </div>
-            <div className='basis-1/3 flex-1 max-w-sm mx-auto relative'>
+              <Image src={rally} className='rounded-3xl object-cover opacity-80 shadow-2xl z-0'  width={'100%'} height={'100%'} alt="image"/>
+            </button>
+            <button className='basis-1/3 flex-1 max-w-sm mx-auto relative'>
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Flashcards App</h2>
               <Image src={flashcards} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
-            </div>
+            </button>
             <div className='basis-1/3 flex-1 max-w-sm mx-auto relative'>
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Elderly Reminder System</h2>
               <Image src={helphome} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
