@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       animation: {
         'float-slow': 'bounce 2s ease-out infinite',
-        appearfade : 'appear 1s ease-in-out',
+        appearfade : 'appear 0.5s ease-in',
+        appearfadeslow : 'appearSlow 1s ease-in'
       },
       fontFamily: {
         burtons: "burtons",
@@ -20,9 +21,20 @@ module.exports = {
                     opacity: '0' },
           '100%' : { transform : 'translate3d(0, 0, 0)',
                     opacity: '1' }
-        }
+        },
+        appearSlow: {
+          '0%' : { transform: 'translate3d(0, 200px, 0)',
+                   opacity: '0' },
+          '75%' : { transform: 'translate3d(0, 200px, 0)',
+                   opacity: '0' },
+                
+          '100%' : { transform : 'translate3d(0, 0, 0)',
+                      opacity: '1' },
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animation-delay"),
+  ],
 }
