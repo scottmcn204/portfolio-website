@@ -108,7 +108,7 @@ export default function Home() {
           </p>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible(!visible)}>
-              {visible && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade'>
+              {visible && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This app was created using the Swift Programming Language along with a MVVM architecture.
                   It allows the user to create and store rally callouts to be used in rally races. This solves a common problem for rally navigators where it can 
                   be difficult to write down rally callouts and expensive to purchase them. This project helped in my understanding of effective UI creation, data manipulation
@@ -119,7 +119,7 @@ export default function Home() {
               <Image src={rally} className='rounded-3xl object-cover opacity-80 shadow-2xl z-0'  width={'100%'} height={'100%'} alt="image"/>
             </button>
             <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible1(!visible1)}>
-              {visible1 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade'>
+              {visible1 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This app was made with the Swift Programming Language along with an MVVM architecture.
                   I allows users to create and organise flashcards which can then be used to test themselves. The app solves the problem of students usually
                   requiring lots of waisted paper to create flashcards for their exams and makes the process more efficeint and simple. This project introduced me to being able to 
@@ -130,7 +130,7 @@ export default function Home() {
               <Image src={flashcards} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
             </button>
             <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible2(!visible2)}>
-              {visible2 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade'>
+              {visible2 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This system was created using HTML, CSS and JS for the website, a firebase database and a python programme
                   to record audio and send it to the database. The system allows a user to say a reminder to a physical device and later view that reminder as text on their own portal on the website.
                   Through this project I learned about using databases, recording and storing audio and performing API calls, specifically Google's voice to text AI API. </p>
@@ -140,7 +140,7 @@ export default function Home() {
               <Image src={helphome} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
             </button>
             <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible3(!visible3)}>
-              {visible3 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade'>
+              {visible3 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This is the portfolio website you are currently on. It was created using moderen web design tools
                 such as React and Tailwind. I used this project to learn how to use these tools and use them to create an effective UI. </p>
                 <a href='https://github.com/scottmcn204/portfolio-website' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg'>View the Code</a>
