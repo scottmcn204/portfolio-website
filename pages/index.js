@@ -57,7 +57,7 @@ export default function Home() {
 
           </div>
           <div className='flex justify-center mb-5'>
-            <div className='md:text-4xl text-3xl flex justify-center text-white bg-gradient-to-r from-gray-400 to-gray-500 px-4 py-2 rounded-md md:w-56 animate-appearfadeslow'>
+            <div className='md:text-4xl text-3xl flex justify-center text-white a px-4 py-2 rounded-md md:w-56 animate-appearfadeslow'>
               <AiFillLinkedin/>
               <h3 className='md:text-xl text-base py-1 px-2 font-bold'><a href='https://www.linkedin.com/in/scottamcnally'>Get in Touch</a></h3>
             </div>
@@ -107,6 +107,18 @@ export default function Home() {
 
           </p>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+          <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible0(!visible0)}>
+              {visible0 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
+                <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>I created this website for the Trinity's Internet Society as their website. I used react and tailwind
+                along with user interface librarys such as TsParticles which aided in creating a clean asthetic for the site's complete remake. I plan to work continuously on this website to 
+                with features such as direct access to our server services for students. </p>
+                <a href='https://github.com/scottmcn204/netsoc' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg'>View the Code</a>
+                <a href='https://main--peppy-cassata-60f441.netlify.app' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg'>Visit the Site</a>
+
+                </div>}
+              <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>RallyNavigator App</h2>
+              <Image src={rally} className='rounded-3xl object-cover opacity-80 shadow-2xl z-0'  width={'100%'} height={'100%'} alt="image"/>
+            </button>
             <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible(!visible)}>
               {visible && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This app was created using the Swift Programming Language along with a MVVM architecture.
