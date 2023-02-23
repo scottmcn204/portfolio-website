@@ -11,6 +11,7 @@ import swift from "/public/swift.png";
 import java from "/public/java.png";
 import web from "/public/web.png"
 import python from "/public/python.png";
+import netsoc from "/public/netsoc.png"
 import { use, useState } from 'react';
 import {useRef} from 'react';
 export default function Home() {
@@ -117,7 +118,7 @@ export default function Home() {
 
                 </div>}
               <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>RallyNavigator App</h2>
-              <Image src={rally} className='rounded-3xl object-cover opacity-80 shadow-2xl z-0'  width={'100%'} height={'100%'} alt="image"/>
+              <Image src={netsoc} className='rounded-3xl object-cover opacity-80 shadow-2xl z-0'  width={'100%'} height={'100%'} alt="image"/>
             </button>
             <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible(!visible)}>
               {visible && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
