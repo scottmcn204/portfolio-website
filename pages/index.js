@@ -24,6 +24,7 @@ export default function Home() {
   const [visible1, setVisible1] = useState(false);
   const [visible2, setVisible2] = useState(false);
   const [visible3, setVisible3] = useState(false);
+  const [visible0, setVisible0] = useState(false);
 
   return (
     <div className={darkMode ? "dark" : ""}>
