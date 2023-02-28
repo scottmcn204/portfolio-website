@@ -137,9 +137,9 @@ export default function Home() {
             </button>
           <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible5(!visible5)}>
               {visible5 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
-                <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>I created this website for the Trinity's Internet Society as their website. I used react and tailwind
+                <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>I created this website for Trinity's Internet Society. I used react and tailwind
                 along with user interface librarys such as TsParticles which aided in creating a clean asthetic for the site's complete remake. I plan to work continuously on this website to 
-                with features such as direct access to our server services for students. </p>
+                create features such as direct access to our server services for students. </p>
                 <a href='https://github.com/scottmcn204/netsoc' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>View the Code</a>
                 <a href='https://main--peppy-cassata-60f441.netlify.app' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>Visit the Site</a>
 
