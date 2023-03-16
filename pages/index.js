@@ -13,6 +13,9 @@ import web from "/public/web.png"
 import python from "/public/python.png";
 import netsoc from "/public/netsoc.png"
 import scrybble from "/public/scrybble.jpg"
+import presentation1 from "/public/presentation1.png"
+import presentation2 from "/public/presentation2.png"
+import presentation3 from "/public/presentation3.png"
 import { use, useState } from 'react';
 import {useRef} from 'react';
 export default function Home() {
@@ -190,6 +193,12 @@ export default function Home() {
               <Image src={portfolio} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
             </button>
           </div>
+          <div className='relative mx-auto'>
+              <Image src={presentation1} className="mx-8 my-8 rounded-lg" alt="presentation"/>
+              <Image src={presentation2} className="mx-8 my-8 rounded-lg" alt="presentation"/>
+              <Image src={presentation3} className="mx-8 my-8 rounded-lg" alt="presentation"/>
+          </div>
+
         </section>
 
       </main>
