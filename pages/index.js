@@ -3,6 +3,10 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import{AiFillLinkedin} from 'react-icons/ai';
 import Image from "next/image";
 import myIcon from "/public/myIcon.png";
+import aib from "/public/aib.png";
+import firstGlass from "/public/firstGlass.jpeg";
+import netsocLogo from "/public/netsocLogo.png";
+import csc from "/public/csc.jpg"
 import flashcards from "/public/flashcards.png";
 import helphome from "/public/help@home.png";
 import portfolio from "/public/portfolio.jpeg";
@@ -11,13 +15,13 @@ import swift from "/public/swift.png";
 import java from "/public/java.png";
 import web from "/public/web.png"
 import python from "/public/python.png";
+import server from "/public/server.png";
 import netsoc from "/public/netsoc.png"
 import scrybble from "/public/scrybble.jpg"
-import presentation1 from "/public/presentation1.png"
-import presentation2 from "/public/presentation2.png"
-import presentation3 from "/public/presentation3.png"
 import { use, useState } from 'react';
 import {useRef} from 'react';
+
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const ref = useRef(null);
@@ -34,6 +38,10 @@ export default function Home() {
   const [visible3, setVisible3] = useState(false);
   const [visible0, setVisible0] = useState(false);
   const [visible5, setVisible5] = useState(false);
+  const [visible6, setVisible6] = useState(false);
+  const [visible7, setVisible7] = useState(false);
+  const [visible8, setVisible8] = useState(false);
+  const [visible9, setVisible9] = useState(false);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -45,36 +53,35 @@ export default function Home() {
         
 
       </Head>
+
       <main className='bg-white px-10 mx-auto md:px-20 lg:px-40 dark:bg-gray-700 transition-colors duration-700 h-full'>
+
         <section className = "min-h-screen">
           <nav className='flex justify-between py-10 mb-5'>
             <h1 className='text-lg md:text-xl font-burtons dark:text-white'>Scott McNally</h1>
             <ul className='flex items-center'>
               <li className=' cursor-pointer text-white bg-gradient-to-r from-cyan-500 to-teal-500 p-2 rounded-full text-base md:text-xl'><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}/></li>
-              <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href="https://drive.google.com/file/d/1ZyPODI2H4e-KfUuDGGd2wfaxanPSfLCJ/view?usp=sharing">Resume</a></li>
+              <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href="https://drive.google.com/file/d/1VnA2iK6MVjMirEC3f1IBt-Vb5wgmnKO_/view?usp=sharing">Resume</a></li>
             </ul>
           </nav>
           <div className='relative mx-auto w-40 h-40 bg-gradient-to-b from-gray-300 to-teal-300 rounded-full shadow-2xl md:h-64 md:w-64 animate-appearfade'>
             <Image src={myIcon} className='rounded-full h-full w-full object-cover object-center border-transparent border-4' alt="image"/>
           </div>
-          <div className='text-center pb-10 pt-5'>
-            <h2 className='font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 p-4 animate-appearfade'>Scott McNally</h2>
-            <p className='font-bold text-sm md:text-lg dark:text-white animate-appearfadeslow'>Computer Science Student based in Dublin, Ireland</p>
+          <div className='text-center pb-10 pt-5 z-40'>
+            <h2 className='font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 p-4 animate-appearfade z-40'>Scott McNally</h2>
+            <p className='font-bold text-sm md:text-lg dark:text-white animate-appearfadeslow z-40'>Computer Science Student based in Dublin, Ireland</p>
           </div>
-          <div className='flex justify-center  mb-5 '>
-            <button onClick={handleClick} className=' text-base md:text-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md animate-appearfadeslow mx-4'>
+          <div className='flex justify-center  mb-5'>
+            <button onClick={handleClick} className=' text-base md:text-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md animate-appearfadeslow mx-4 z-40'>
               <h3 className='font-bold '>About Me</h3>
             </button>
-            <button onClick={handleClick2} className=' text-base md:text-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md animate-appearfadeslow mx-1 '>
+            <button onClick={handleClick2} className=' text-base md:text-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md animate-appearfadeslow mx-1 z-40'>
               <h3 className='font-bold '>My Projects</h3>
             </button>
 
-
-
-
           </div>
-          <div className='flex justify-center mb-5'>
-            <div className='md:text-4xl bg-gradient-to-r from-gray-400 to-gray-600 text-3xl flex justify-center text-white a px-4 py-2 rounded-md md:w-56 animate-appearfadeslow '>
+          <div className='flex justify-center mb-5 z-40'>
+            <div className='md:text-4xl bg-gradient-to-r from-gray-400 to-gray-600 text-3xl flex justify-center text-white a px-4 py-2 rounded-md md:w-56 animate-appearfadeslow z-40'>
               <AiFillLinkedin/>
               <h3 className='md:text-xl text-base py-1 px-2 font-bold'><a href='https://www.linkedin.com/in/scottamcnally'>Get in Touch</a></h3>
             </div>
@@ -82,19 +89,105 @@ export default function Home() {
         </section>
         <section ref={ref} className='min-h-screen '>
           <h3 className='text-2xl font-burtons py-1 dark:text-white text-center'>About Me</h3>
+          
           <p className='text-sm md:text-base p-4 text-gray-800 m-1 mb-2 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
             I am currently studying Computer Science in <span className='text-pink-400 font-bold'>Trinity College
             Dublin</span> in the class of 2027. As a part of my studies, I do a 
             lot of work using <span className='text-pink-400 font-bold'>Java</span> and am learning to use it in a wide
-            area of applications. Alongside my college course, I enjoy
+            area of applications. I also do a lot of work with <span className='text-pink-400 font-bold'>ARM Assembly and VHDL</span> to understand hardware at a low level,
+            this is a part of my course I'm especially passionate about. Alongside my college course, I enjoy
             creating apps using the <span className='text-pink-400 font-bold'>Swift Programming Language</span> and 
             making websites with modern tools such as <span className='text-pink-400 font-bold'>React and CSS tailwind</span>.<br/>
-            I also taught myself <span className='text-pink-400 font-bold'>Python</span> while in secondary school. I used
-            this to recreate Mathematical concepts such as Conway's Game
-            Of Life and other projects. <br/>
-            I really enjoy learning new things and aquiring new skills.
+            I also taught myself <span className='text-pink-400 font-bold'>Python</span> while in secondary school.<br/>
+            I really enjoy learning new things and aquiring new skills. I spend a lot of my free time playing Ultimate Frisbee with my local team
+            and working on vintage cars such as my MG Midget and Morris Minor 1000.
+            </p>
 
-          </p>
+            {!visible6 && !visible7 && !visible8 && !visible9 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
+            <h3 className='text-xl md:text-2xl py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>My Work Experience:</h3>
+            <p className='mb-3 text-gray-800 dark:text-gray-200 font-bold'>Click to learn more!</p>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-purple-500 to-purple-800 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible6(!visible6)}>
+              <Image src={aib} className="h-7 w-5 my-auto mr-2" alt="image"/>
+              <p className=' font-bold py-2'>AIB</p>
+            </button>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-gray-500 to-gray-700 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible7(!visible7)}>
+              <Image src={netsocLogo} className="h-5 w-5 my-auto mr-2" alt="image"/>
+              <p className=' font-bold py-2'>NetSoc</p>
+            </button>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible8(!visible8)}>
+              <Image src={firstGlass} className="h-7 w-7 my-auto mr-2 rounded-2xl " alt="image"/>
+              <p className=' font-bold py-2'>FirstGlass</p>
+            </button>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-yellow-500 to-blue-700 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible9(!visible9)}>
+              <Image src={csc} className="h-7 w-7 my-auto mr-2 rounded-2xl" alt="image"/>
+              <p className=' font-bold py-2'>Sailing</p>
+            </button>
+          </div>}
+
+          {visible6 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-purple-500 to-purple-800 text-white w-48 mx-auto rounded-lg mb-3'>
+              <Image src={aib} className="h-7 w-5 my-auto mr-2" alt="image"/>
+              <p className=' font-bold py-2'>AIB</p>
+            </button>
+            <p className='mb-3 text-gray-800 dark:text-gray-200'>I worked with AIB between May 2023 and September 2023 as a Storage Admin Intern. I started off my
+            internship learning from others on the team through knowledge transfer sessions and slowly taking on some operational roles. I then moved on to my main project for the summer
+            of implementing reporting software for the storage team. I had the opportunity to use my skills in SQL and PowerBI to debug reporting problems in Aptare 
+            and create a presentation of these problems for the application owner Veritas. I learned invaluable skills over the course of the internship not only in knowledge 
+            of the storage system, but also accountability, and collaboration with a team.</p>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible6(!visible6)}>
+              <p className=' font-bold py-2'>Back</p>
+            </button>
+          </div>}
+
+          {visible7 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-gray-500 to-gray-700 text-white w-48 mx-auto rounded-lg mb-3'>
+              <Image src={netsocLogo} className="h-5 w-5 my-auto mr-2" alt="image"/>
+              <p className=' font-bold py-2'>NetSoc</p>
+            </button>
+            <p className='mb-3 text-gray-800 dark:text-gray-200'>Netsoc or Dublin University Internet Society is a society focused on promoting everything computer science and 
+            knowledge surrounding it. We also run our own servers, supplying VMs and storage for students a part of the society. I currently work as both the webmaster and sysadmin for
+            the society. My roles include creating the current website from scratch which is seen in my portfolio. I am currently working on setting up our servers after 
+            significant down time last year.</p>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible7(!visible7)}>
+              <p className=' font-bold py-2'>Back</p>
+            </button>
+          </div>}
+
+          {visible8 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white w-48 mx-auto rounded-lg mb-3'>
+              <Image src={firstGlass} className="h-7 w-7 my-auto mr-2 rounded-2xl " alt="image"/>
+              <p className=' font-bold py-2'>FirstGlass</p>
+            </button>
+            <p className='mb-3 text-gray-800 dark:text-gray-200'>While working at First Glass I had the opportunity to work alongside engineers
+                in different aspects of the glass manufacturing process. I learned problem solving
+                skills from them and how the company was run and managed. I developed my
+                skills in intuition and diligence at this job. During my time there I was given an
+                engineering problem involving the logistics of keeping very large panes of glass
+                protected during long distance transport. My solution required me to design and
+                fabricate steel A-Frames with wooden dampers, along with a tracking device.</p>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible8(!visible8)}>
+              <p className=' font-bold py-2'>Back</p>
+            </button>
+          </div>}
+
+          {visible9 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
+          <button className='flex justify-center text-lg bg-gradient-to-r from-yellow-500 to-blue-700 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible9(!visible9)}>
+              <Image src={csc} className="h-7 w-7 my-auto mr-2 rounded-2xl" alt="image"/>
+              <p className=' font-bold py-2'>Sailing</p>
+            </button>
+            <p className='mb-3 text-gray-800 dark:text-gray-200'>I worked as a sailing instructor in Courtown Sailing Club each year during the
+                summer months from 2018 to 2022. I had a hands-on role with the organisation
+                of the club and aided in management alongside teaching a different level each
+                year. I was able to develop key skills in communication, management and
+                working with a team during this time. As it’s a small club, I played an important
+                role in managing the club alongside my responsibilities as an instructor.</p>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible9(!visible9)}>
+              <p className=' font-bold py-2'>Back</p>
+            </button>
+          </div>}
+          
+
+          
           <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
             <h3 className='text-xl md:text-2xl py-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>I have experience with:</h3>
             <div className='flex justify-center text-lg bg-gradient-to-r from-orange-400 to-orange-600 text-white w-48 mx-auto rounded-lg mb-3'>
@@ -112,6 +205,10 @@ export default function Home() {
             <div className='flex justify-center text-lg bg-gradient-to-r from-cyan-500 to-cyan-700 text-white w-48 mx-auto rounded-lg mb-3'>
               <Image src={web} className="h-5 w-5 my-auto mr-2" alt="image"/>
               <p className=' font-bold py-2'><a href='https://reactjs.org'>Web Dev</a></p>
+            </div>
+            <div className='flex justify-center text-lg bg-gradient-to-r from-pink-500 to-pink-700 text-white w-48 mx-auto rounded-lg mb-3'>
+              <Image src={server} className="h-5 w-5 my-auto mr-2" alt="image"/>
+              <p className=' font-bold py-2'><a href=''>Server Admin</a></p>
             </div>
 
           </div>
@@ -144,7 +241,7 @@ export default function Home() {
                 along with user interface librarys such as TsParticles which aided in creating a clean asthetic for the site's complete remake. I plan to work continuously on this website to 
                 create features such as direct access to our server services for students. </p>
                 <a href='https://github.com/scottmcn204/netsoc' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>View the Code</a>
-                <a href='https://main--peppy-cassata-60f441.netlify.app' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>Visit the Site</a>
+                <a href='https://netsoc.netlify.app' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>Visit the Site</a>
 
                 </div>}
               <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Netsoc Website</h2>
@@ -192,11 +289,6 @@ export default function Home() {
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Portfolio Website</h2>
               <Image src={portfolio} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
             </button>
-          </div>
-          <div className='relative mx-auto'>
-              <Image src={presentation1} className="mx-8 my-8 rounded-lg" alt="presentation"/>
-              <Image src={presentation2} className="mx-8 my-8 rounded-lg" alt="presentation"/>
-              <Image src={presentation3} className="mx-8 my-8 rounded-lg" alt="presentation"/>
           </div>
 
         </section>
