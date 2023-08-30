@@ -22,7 +22,6 @@
     "react-icons": "^4.7.1",
     "react-particles": "^2.12.2",
     "react-pdf": "^6.2.0",
-    "react-tsparticles": "^2.12.2",
     "tailwindcss-animation-delay": "^1.0.7",
     "tsparticles": "^2.12.0"
   },
