@@ -43,6 +43,10 @@ export default function Home() {
   const [visible8, setVisible8] = useState(false);
   const [visible9, setVisible9] = useState(false);
   const [visible10, setVisible10] = useState(false);
+  const [visible11, setVisible11] = useState(false);
+  const [visible12, setVisible12] = useState(false);
+  const [visible13, setVisible13] = useState(false);
+  const [visible14, setVisible14] = useState(false);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -189,36 +193,94 @@ export default function Home() {
           
 
           
-          {!visible10 && <div className={'text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'}>
-            <h3 className='text-xl md:text-2xl py-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>I have experience with:</h3>
+          {!visible10 && !visible11 && !visible12 && !visible13 && !visible14 && <div className={'text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'}>
+            <h3 className='text-xl md:text-2xl py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>I have experience with:</h3>
+            <p className='mb-3 text-gray-800 dark:text-gray-200 font-bold'>Click to learn more!</p>
             <button className='flex justify-center text-lg bg-gradient-to-r from-orange-400 to-orange-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible10(!visible10)}>
               <Image src={swift} className="h-5 w-5 my-auto mr-2" alt="image"/>
               <p className=' font-bold py-2'>Swift</p>
             </button>
-            <div className='flex justify-center text-lg bg-gradient-to-r from-red-500 to-red-700 text-white w-48 mx-auto rounded-lg mb-3'>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-red-500 to-red-700 text-white w-48 mx-auto rounded-lg mb-3'onClick={() => setVisible11(!visible11)}>
               <Image src={java} className="h-5 w-7 my-auto mr-2" alt="image"/>
-              <p className=' font-bold py-2'><a href='https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html'>Java</a></p>
-            </div>
-            <div className='flex justify-center text-lg bg-gradient-to-r from-blue-600 to-blue-800 text-white w-48 mx-auto rounded-lg mb-3'>
+              <p className=' font-bold py-2'>Java</p>
+            </button>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-blue-600 to-blue-800 text-white w-48 mx-auto rounded-lg mb-3'onClick={() => setVisible12(!visible12)}>
               <Image src={python} className="h-5 w-5 my-auto mr-2" alt="image"/>
-              <p className=' font-bold py-2'><a href='https://www.python.org'>Python</a></p>
-            </div>
-            <div className='flex justify-center text-lg bg-gradient-to-r from-cyan-500 to-cyan-700 text-white w-48 mx-auto rounded-lg mb-3'>
+              <p className=' font-bold py-2'>Python</p>
+            </button>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-cyan-500 to-cyan-700 text-white w-48 mx-auto rounded-lg mb-3'onClick={() => setVisible13(!visible13)}>
               <Image src={web} className="h-5 w-5 my-auto mr-2" alt="image"/>
-              <p className=' font-bold py-2'><a href='https://reactjs.org'>Web Dev</a></p>
-            </div>
-            <div className='flex justify-center text-lg bg-gradient-to-r from-pink-500 to-pink-700 text-white w-48 mx-auto rounded-lg mb-3'>
+              <p className=' font-bold py-2'>Web Dev</p>
+            </button>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-pink-500 to-pink-700 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible14(!visible14)}>
               <Image src={server} className="h-5 w-5 my-auto mr-2" alt="image"/>
-              <p className=' font-bold py-2'><a href=''>Server Admin</a></p>
-            </div>
+              <p className=' font-bold py-2'>Server Admin</p>
+            </button>
           </div>}
           {visible10 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'>
             <button className='flex justify-center text-lg bg-gradient-to-r from-orange-400 to-orange-600 text-white w-48 mx-auto rounded-lg mb-3'>
               <Image src={swift} className="h-5 w-5 my-auto mr-2" alt="image"/>
               <p className=' font-bold py-2'>Swift</p>
             </button>
-            <p className='mb-3 text-gray-800 dark:text-gray-200'></p>
+            <p className='mb-3 text-gray-800 dark:text-gray-200'>
+              I started learning Swift as a way to make IOS applications. I started to learn through tutorials on codewithchris.com and using Apple's Swift documentation.
+              After creating some practice projects I started some of my own projects like Flashcards and RallyNavigator App. Both of which used JSON data displayed using SwiftUI.
+              My most complex project was ScrybbleChat, a drawing based messaging app, using a Firebase database, SwiftUI interface and Apple's notification API.
+            </p>
             <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible10(!visible10)}>
+              <p className=' font-bold py-2'>Back</p>
+            </button>
+          </div>}
+          {visible11 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'>
+            <div className='flex justify-center text-lg bg-gradient-to-r from-red-500 to-red-700 text-white w-48 mx-auto rounded-lg mb-3'>
+              <Image src={java} className="h-5 w-7 my-auto mr-2" alt="image"/>
+              <p className=' font-bold py-2'>Java</p>
+            </div>
+            <p className='mb-3 text-gray-800 dark:text-gray-200'>
+              I frequently use Java for my software development module in college. We have learned object oriented programming through Java and I am now quite confident
+              in my ability to use it. We've used it in a wide variety of areas such as a flight scanner application, different mathematical programs and parsing data.
+            </p>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible11(!visible11)}>
+              <p className=' font-bold py-2'>Back</p>
+            </button>
+          </div>}
+          {visible12 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-blue-600 to-blue-800 text-white w-48 mx-auto rounded-lg mb-3'>
+              <Image src={python} className="h-5 w-5 my-auto mr-2" alt="image"/>
+              <p className=' font-bold py-2'>Python</p>
+            </button>
+            <p className='mb-3 text-gray-800 dark:text-gray-200'>
+              Python was the first programming language I learned, which helped me to get a foundational understanding of programming and software development. I used it to 
+              create small 2d games with PyGame, programme Raspberry Pis and MicroBits and programme mathematical concepts such as Conway's Game of Life.
+            </p>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible12(!visible12)}>
+              <p className=' font-bold py-2'>Back</p>
+            </button>
+          </div>}
+          {visible13 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-cyan-500 to-cyan-700 text-white w-48 mx-auto rounded-lg mb-3'>
+              <Image src={web} className="h-5 w-5 my-auto mr-2" alt="image"/>
+              <p className=' font-bold py-2'>Web Dev</p>
+            </button>
+            <p className='mb-3 text-gray-800 dark:text-gray-200'>
+              I really enjoy making modern looking websites like this one and the Netsoc website seen below. I am experienced with React, Next.js and CSS tailwind.
+              I started off learning to use vanilla HTNL, CSS and JS seen in the website for my Elderly Reminder System. Then moving on to more modern tools. This is a 
+              skill I continuously practice.
+            </p>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible13(!visible13)}>
+              <p className=' font-bold py-2'>Back</p>
+            </button>
+          </div>}
+          {visible14 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-pink-500 to-pink-700 text-white w-48 mx-auto rounded-lg mb-3'>
+              <Image src={server} className="h-5 w-5 my-auto mr-2" alt="image"/>
+              <p className=' font-bold py-2'>Server Admin</p>
+            </button>
+            <p className='mb-3 text-gray-800 dark:text-gray-200'>
+              Through both my internship with AIB and my work with NetSoc, I have a lot of work experience with servers. I have real world exerience using both SQL and 
+              reporting tools like PowerBI and Aptare. I have spent time on both the opertaional side and project development side of this field.
+            </p>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible14(!visible14)}>
               <p className=' font-bold py-2'>Back</p>
             </button>
           </div>}
