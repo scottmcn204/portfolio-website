@@ -304,7 +304,7 @@ export default function Home() {
                  calculate CO2 emissions for a certain time period. My job as team lead involved organising sessions, delegating roles while making sure we were on track
                   with our brief and deadlines. I focused on creating the search engine, helping with the map and some of the airport statistics and parsing the data. This project taught me a lot
                   about project management under a strict deadline and good communication in a team programming environment.</p>
-                <a href='' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>View the Code</a>
+                <a href='https://github.com/scottmcn204/Group27Project' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>View the Code</a>
 
                 </div>}
               <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>FlightScanner</h2>
