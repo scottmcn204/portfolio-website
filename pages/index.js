@@ -16,8 +16,9 @@ import java from "/public/java.png";
 import web from "/public/web.png"
 import python from "/public/python.png";
 import server from "/public/server.png";
-import netsoc from "/public/netsoc.png"
-import scrybble from "/public/scrybble.jpg"
+import netsoc from "/public/netsoc.png";
+import scrybble from "/public/scrybble.jpg";
+import flightScanner from "/public/flightScanner.png"
 import { use, useState } from 'react';
 import {useRef} from 'react';
 
@@ -47,6 +48,7 @@ export default function Home() {
   const [visible12, setVisible12] = useState(false);
   const [visible13, setVisible13] = useState(false);
   const [visible14, setVisible14] = useState(false);
+  const [visible15, setVisible15] = useState(false);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -294,7 +296,19 @@ export default function Home() {
           </p>
 
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-          <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible0(!visible0)}>
+          <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible15(!visible15)}>
+              {visible15 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
+                <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>ScrybbleChat is a messaging app which allows people to send doodles or Scrybbles to each other
+                 as a form of communication. It's still in development and I am continuously adding additional functionality such as groupchats and more drawing tools. This is a full stack app 
+                 using Swift along with Firebase Database, Messaging and Authentication. It's my largest project to date and I hope to release it to the IOS app store soon. The beta version is currently 
+                 available for testing</p>
+                <a href='' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>View the Code</a>
+
+                </div>}
+              <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>FlightScanner</h2>
+              <Image src={flightScanner} className='rounded-3xl object-cover   z-0'  width={'100%'} height={'100%'} alt="image"/>
+            </button>
+          <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible0(!visible0)}>
               {visible0 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>ScrybbleChat is a messaging app which allows people to send doodles or Scrybbles to each other
                  as a form of communication. It's still in development and I am continuously adding additional functionality such as groupchats and more drawing tools. This is a full stack app 
@@ -305,9 +319,9 @@ export default function Home() {
 
                 </div>}
               <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>ScrybbleChat</h2>
-              <Image src={scrybble} className='rounded-3xl object-cover opacity-80 shadow-2xl z-0'  width={'100%'} height={'100%'} alt="image"/>
+              <Image src={scrybble} className='rounded-3xl object-cover   z-0'  width={'100%'} height={'100%'} alt="image"/>
             </button>
-          <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible5(!visible5)}>
+          <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible5(!visible5)}>
               {visible5 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>I created this website for Trinity's Internet Society. I used react and tailwind
                 along with user interface librarys such as TsParticles which aided in creating a clean asthetic for the site's complete remake. I plan to work continuously on this website to 
@@ -317,10 +331,10 @@ export default function Home() {
 
                 </div>}
               <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Netsoc Website</h2>
-              <Image src={netsoc} className='rounded-3xl object-cover opacity-80 shadow-2xl z-0'  width={'100%'} height={'100%'} alt="image"/>
+              <Image src={netsoc} className='rounded-3xl object-cover   z-0'  width={'100%'} height={'100%'} alt="image"/>
             </button>
 
-            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible(!visible)}>
+            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible(!visible)}>
               {visible && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This app was created using the Swift Programming Language along with a MVVM architecture.
                   It allows the user to create and store rally callouts to be used in rally races. This solves a common problem for rally navigators where it can 
@@ -329,9 +343,9 @@ export default function Home() {
                 <a href='https://github.com/scottmcn204/Rally' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg'>View the Code</a>
                 </div>}
               <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>RallyNavigator App</h2>
-              <Image src={rally} className='rounded-3xl object-cover opacity-80 shadow-2xl z-0'  width={'100%'} height={'100%'} alt="image"/>
+              <Image src={rally} className='rounded-3xl object-cover  z-0'  width={'100%'} height={'100%'} alt="image"/>
             </button>
-            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible1(!visible1)}>
+            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible1(!visible1)}>
               {visible1 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This app was made with the Swift Programming Language along with an MVVM architecture.
                   I allows users to create and organise flashcards which can then be used to test themselves. The app solves the problem of students usually
@@ -340,9 +354,9 @@ export default function Home() {
                 <a href='https://github.com/scottmcn204/Flashcards3' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg'>View the Code</a>
                 </div>}
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Flashcards App</h2>
-              <Image src={flashcards} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
+              <Image src={flashcards} className='rounded-3xl object-cover  ' width={'100%'} height={'100%'} alt="image"/>
             </button>
-            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible2(!visible2)}>
+            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible2(!visible2)}>
               {visible2 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This system was created using HTML, CSS and JS for the website, a firebase database and a python programme
                   to record audio and send it to the database. The system allows a user to say a reminder to a physical device and later view that reminder as text on their own portal on the website.
@@ -350,16 +364,16 @@ export default function Home() {
                 <a href='https://github.com/scottmcn204/DisplayWorking' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg'>View the Code</a>
                 </div>}
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Elderly Reminder System</h2>
-              <Image src={helphome} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
+              <Image src={helphome} className='rounded-3xl object-cover  ' width={'100%'} height={'100%'} alt="image"/>
             </button>
-            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10' onClick={() => setVisible3(!visible3)}>
+            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible3(!visible3)}>
               {visible3 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This is the portfolio website you are currently on. It was created using moderen web design tools
                 such as React and Tailwind. I used this project to learn how to use these tools and use them to create an effective UI. </p>
                 <a href='https://github.com/scottmcn204/portfolio-website' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg'>View the Code</a>
                 </div>}
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Portfolio Website</h2>
-              <Image src={portfolio} className='rounded-3xl object-cover opacity-80 shadow-2xl' width={'100%'} height={'100%'} alt="image"/>
+              <Image src={portfolio} className='rounded-3xl object-cover ' width={'100%'} height={'100%'} alt="image"/>
             </button>
           </div>
 
