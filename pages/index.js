@@ -298,10 +298,12 @@ export default function Home() {
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
           <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible15(!visible15)}>
               {visible15 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
-                <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>ScrybbleChat is a messaging app which allows people to send doodles or Scrybbles to each other
-                 as a form of communication. It's still in development and I am continuously adding additional functionality such as groupchats and more drawing tools. This is a full stack app 
-                 using Swift along with Firebase Database, Messaging and Authentication. It's my largest project to date and I hope to release it to the IOS app store soon. The beta version is currently 
-                 available for testing</p>
+                <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>FlightScanner was made for my programming project module in college. I was assigned
+                 as the team lead for my group of 4. We were given 100,000 rows of US flight data from 2020, and our task was to create an application using this data. 
+                 We created a flight scanner app that allowed the user to search by map or text for an airport, get stats on the flights in and out of that airport and 
+                 calculate CO2 emissions for a certain time period. My job as team lead involved organising sessions, delegating roles while making sure we were on track
+                  with our brief and deadlines. I focused on creating the search engine, helping with the map and some of the airport statistics. This project taught me a lot
+                  about project management under a strict deadline and good communitcation in a team programming environment.</p>
                 <a href='' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>View the Code</a>
 
                 </div>}
