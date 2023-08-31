@@ -4,7 +4,7 @@ import{AiFillLinkedin} from 'react-icons/ai';
 import Image from "next/image";
 import myIcon from "/public/myIcon.png";
 import aib from "/public/aib.png";
-import firstGlass from "/public/firstGlass.jpeg";
+import firstGlass from "/public/firstGlass.jpg";
 import netsocLogo from "/public/netsocLogo.png";
 import csc from "/public/csc.jpg"
 import flashcards from "/public/flashcards.png";
@@ -42,6 +42,7 @@ export default function Home() {
   const [visible7, setVisible7] = useState(false);
   const [visible8, setVisible8] = useState(false);
   const [visible9, setVisible9] = useState(false);
+  const [visible10, setVisible10] = useState(false);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -90,7 +91,7 @@ export default function Home() {
         <section ref={ref} className='min-h-screen '>
           <h3 className='text-2xl font-burtons py-1 dark:text-white text-center'>About Me</h3>
           
-          <p className='text-sm md:text-base p-4 text-gray-800 m-1 mb-2 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
+          <p className='text-sm md:text-base p-4 text-gray-800 m-1 mb-8 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
             I am currently studying Computer Science in <span className='text-pink-400 font-bold'>Trinity College
             Dublin</span> in the class of 2027. As a part of my studies, I do a 
             lot of work using <span className='text-pink-400 font-bold'>Java</span> and am learning to use it in a wide
@@ -103,7 +104,7 @@ export default function Home() {
             and working on vintage cars such as my MG Midget and Morris Minor 1000.
             </p>
 
-            {!visible6 && !visible7 && !visible8 && !visible9 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
+            {!visible6 && !visible7 && !visible8 && !visible9 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'>
             <h3 className='text-xl md:text-2xl py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>My Work Experience:</h3>
             <p className='mb-3 text-gray-800 dark:text-gray-200 font-bold'>Click to learn more!</p>
             <button className='flex justify-center text-lg bg-gradient-to-r from-purple-500 to-purple-800 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible6(!visible6)}>
@@ -124,7 +125,7 @@ export default function Home() {
             </button>
           </div>}
 
-          {visible6 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
+          {visible6 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'>
             <button className='flex justify-center text-lg bg-gradient-to-r from-purple-500 to-purple-800 text-white w-48 mx-auto rounded-lg mb-3'>
               <Image src={aib} className="h-7 w-5 my-auto mr-2" alt="image"/>
               <p className=' font-bold py-2'>AIB</p>
@@ -139,7 +140,7 @@ export default function Home() {
             </button>
           </div>}
 
-          {visible7 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
+          {visible7 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'>
             <button className='flex justify-center text-lg bg-gradient-to-r from-gray-500 to-gray-700 text-white w-48 mx-auto rounded-lg mb-3'>
               <Image src={netsocLogo} className="h-5 w-5 my-auto mr-2" alt="image"/>
               <p className=' font-bold py-2'>NetSoc</p>
@@ -153,7 +154,7 @@ export default function Home() {
             </button>
           </div>}
 
-          {visible8 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
+          {visible8 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'>
             <button className='flex justify-center text-lg bg-gradient-to-r from-blue-400 to-blue-600 text-white w-48 mx-auto rounded-lg mb-3'>
               <Image src={firstGlass} className="h-7 w-7 my-auto mr-2 rounded-2xl " alt="image"/>
               <p className=' font-bold py-2'>FirstGlass</p>
@@ -170,7 +171,7 @@ export default function Home() {
             </button>
           </div>}
 
-          {visible9 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
+          {visible9 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'>
           <button className='flex justify-center text-lg bg-gradient-to-r from-yellow-500 to-blue-700 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible9(!visible9)}>
               <Image src={csc} className="h-7 w-7 my-auto mr-2 rounded-2xl" alt="image"/>
               <p className=' font-bold py-2'>Sailing</p>
@@ -188,12 +189,12 @@ export default function Home() {
           
 
           
-          <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto '>
+          {!visible10 && <div className={'text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'}>
             <h3 className='text-xl md:text-2xl py-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>I have experience with:</h3>
-            <div className='flex justify-center text-lg bg-gradient-to-r from-orange-400 to-orange-600 text-white w-48 mx-auto rounded-lg mb-3'>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-orange-400 to-orange-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible10(!visible10)}>
               <Image src={swift} className="h-5 w-5 my-auto mr-2" alt="image"/>
-              <p className=' font-bold py-2'><a href='https://developer.apple.com/swift/'>Swift</a></p>
-            </div>
+              <p className=' font-bold py-2'>Swift</p>
+            </button>
             <div className='flex justify-center text-lg bg-gradient-to-r from-red-500 to-red-700 text-white w-48 mx-auto rounded-lg mb-3'>
               <Image src={java} className="h-5 w-7 my-auto mr-2" alt="image"/>
               <p className=' font-bold py-2'><a href='https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html'>Java</a></p>
@@ -210,8 +211,17 @@ export default function Home() {
               <Image src={server} className="h-5 w-5 my-auto mr-2" alt="image"/>
               <p className=' font-bold py-2'><a href=''>Server Admin</a></p>
             </div>
-
-          </div>
+          </div>}
+          {visible10 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-orange-400 to-orange-600 text-white w-48 mx-auto rounded-lg mb-3'>
+              <Image src={swift} className="h-5 w-5 my-auto mr-2" alt="image"/>
+              <p className=' font-bold py-2'>Swift</p>
+            </button>
+            <p className='mb-3 text-gray-800 dark:text-gray-200'></p>
+            <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible10(!visible10)}>
+              <p className=' font-bold py-2'>Back</p>
+            </button>
+          </div>}
         </section>
         <section ref={ref2} className='min-h-screen'>
           <h3 className='text-2xl font-burtons py-1 dark:text-white text-center'>Portfolio</h3>
