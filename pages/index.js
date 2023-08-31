@@ -105,7 +105,7 @@ export default function Home() {
             this is a part of my course I'm especially passionate about. Alongside my college course, I enjoy
             creating apps using the <span className='text-pink-400 font-bold'>Swift Programming Language</span> and 
             making websites with modern tools such as <span className='text-pink-400 font-bold'>React and CSS tailwind</span>.<br/>
-            I also taught myself <span className='text-pink-400 font-bold'>Python</span> while in secondary school.<br/>
+            While in secondary school, I also taught myself <span className='text-pink-400 font-bold'>Python</span> .<br/>
             I really enjoy learning new things and aquiring new skills. I spend a lot of my free time playing Ultimate Frisbee with my local team
             and working on vintage cars such as my MG Midget and Morris Minor 1000.
             </p>
@@ -152,7 +152,7 @@ export default function Home() {
               <p className=' font-bold py-2'>NetSoc</p>
             </button>
             <p className='mb-3 text-gray-800 dark:text-gray-200'>Netsoc or Dublin University Internet Society is a society focused on promoting everything computer science and 
-            knowledge surrounding it. We also run our own servers, supplying VMs and storage for students a part of the society. I currently work as both the webmaster and sysadmin for
+            knowledge surrounding it. We also run our own servers, supplying VMs and storage for students that are part of the society. I currently work as both the webmaster and sysadmin for
             the society. My roles include creating the current website from scratch which is seen in my portfolio. I am currently working on setting up our servers after 
             significant down time last year.</p>
             <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible7(!visible7)}>
@@ -279,8 +279,8 @@ export default function Home() {
               <p className=' font-bold py-2'>Server Admin</p>
             </button>
             <p className='mb-3 text-gray-800 dark:text-gray-200'>
-              Through both my internship with AIB and my work with NetSoc, I have a lot of work experience with servers. I have real world exerience using both SQL and 
-              reporting tools like PowerBI and Aptare. I have spent time on both the opertaional side and project development side of this field.
+              Through both my internship with AIB and my work with NetSoc, I have a lot of work experience with servers. I have real world experience using both SQL and 
+              reporting tools like PowerBI and Aptare. I have spent time on both the operational side and project development side of this field.
             </p>
             <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible14(!visible14)}>
               <p className=' font-bold py-2'>Back</p>
@@ -302,8 +302,8 @@ export default function Home() {
                  as the team lead for my group of 4. We were given 100,000 rows of US flight data from 2020, and our task was to create an application using this data. 
                  We created a flight scanner app that allowed the user to search by map or text for an airport, get stats on the flights in and out of that airport and 
                  calculate CO2 emissions for a certain time period. My job as team lead involved organising sessions, delegating roles while making sure we were on track
-                  with our brief and deadlines. I focused on creating the search engine, helping with the map and some of the airport statistics. This project taught me a lot
-                  about project management under a strict deadline and good communitcation in a team programming environment.</p>
+                  with our brief and deadlines. I focused on creating the search engine, helping with the map and some of the airport statistics and parsing the data. This project taught me a lot
+                  about project management under a strict deadline and good communication in a team programming environment.</p>
                 <a href='' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>View the Code</a>
 
                 </div>}
