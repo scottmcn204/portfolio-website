@@ -68,7 +68,7 @@ export default function Home() {
             <h1 className='text-lg md:text-xl font-burtons dark:text-white'>Scott McNally</h1>
             <ul className='flex items-center'>
               <li className=' cursor-pointer text-white bg-gradient-to-r from-cyan-500 to-teal-500 p-2 rounded-full text-base md:text-xl'><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}/></li>
-              <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href="https://drive.google.com/file/d/1VnA2iK6MVjMirEC3f1IBt-Vb5wgmnKO_/view?usp=sharing">Resume</a></li>
+              <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href="https://drive.google.com/file/d/17DJL8FryLx6XKV3vAFhpXJmPDP5gdSpH/view?usp=sharing">Resume</a></li>
             </ul>
           </nav>
           <div className='relative mx-auto w-40 h-40 bg-gradient-to-b from-gray-300 to-teal-300 rounded-full shadow-2xl md:h-64 md:w-64 animate-appearfade'>
@@ -350,8 +350,8 @@ export default function Home() {
             <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible1(!visible1)}>
               {visible1 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This app was made with the Swift Programming Language along with an MVVM architecture.
-                  I allows users to create and organise flashcards which can then be used to test themselves. The app solves the problem of students usually
-                  requiring lots of waisted paper to create flashcards for their exams and makes the process more efficeint and simple. This project introduced me to being able to 
+                  It allows users to create and organise flashcards which can then be used to test themselves. The app solves the problem of students usually
+                  requiring lots of waisted paper to create flashcards for their exams and makes the process more efficient and simple. This project introduced me to being able to 
                   store and manipulate persistant data. I also learned about different ways of doing this such as databases and local storage on mobile. </p>
                 <a href='https://github.com/scottmcn204/Flashcards3' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg'>View the Code</a>
                 </div>}
