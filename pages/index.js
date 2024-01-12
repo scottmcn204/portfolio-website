@@ -65,7 +65,7 @@ export default function Home() {
 
         <section className = "min-h-screen">
           <nav className='flex justify-between py-10 mb-5'>
-            <h1 className='text-lg md:text-xl font-burtons dark:text-white'>Scott McNally</h1>
+            <h1 className='text-lg md:text-xl font-burtons dark:text-white'>MCNALLSC</h1>
             <ul className='flex items-center'>
               <li className=' cursor-pointer text-white bg-gradient-to-r from-cyan-500 to-teal-500 p-2 rounded-full text-base md:text-xl'><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}/></li>
               <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href="https://drive.google.com/file/d/17DJL8FryLx6XKV3vAFhpXJmPDP5gdSpH/view?usp=sharing">Resume</a></li>
