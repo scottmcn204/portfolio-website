@@ -19,6 +19,7 @@ import server from "/public/server.png";
 import netsoc from "/public/netsoc.png";
 import scrybble from "/public/scrybble.jpg";
 import flightScanner from "/public/flightScanner.png"
+import gameboy from "/public/gameboy.png"
 import { use, useState } from 'react';
 import {useRef} from 'react';
 
@@ -292,24 +293,17 @@ export default function Home() {
           <p className='text-sm md:text-base p-4 text-gray-800 m-1 mb-2 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
             The following are a range of projects which I have done using 
             the languages listed above. Click on a project to view more information.
-
           </p>
-
+          <div className='text-sm md:text-base p-4 text-gray-800 m-1 mb-2 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
+            <h3 className='text-xl md:text-2xl py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>What I'm currently working on:</h3>
+            <p className='mb-2'>
+              I'm currently learning to design games for the original DMG-01 Gameboy in Assembly code. I'm doing this to get a deeper understanding of computer architecture and hardware. I chose the 
+              original Gameboy due to it's hardware limitations which make the process of understanding each decision in it's architecture easier. To achieve this I am using the book "Gameboy Assembly 
+              Programming for the Modern Game Developer" along with the RGBDS library to compile my Assembly code.
+            </p>
+            <Image src={gameboy} className='rounded-3xl object-cover   z-0'  width={'100%'} height={'100%'} alt="image"/>
+          </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-          <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible15(!visible15)}>
-              {visible15 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
-                <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>FlightScanner was made for my programming project module in college. I was assigned
-                 as the team lead for my group of 4. We were given 100,000 rows of US flight data from 2020, and our task was to create an application using this data. 
-                 We created a flight scanner app that allowed the user to search by map or text for an airport, get stats on the flights in and out of that airport and 
-                 calculate CO2 emissions for a certain time period. My job as team lead involved organising sessions, delegating roles while making sure we were on track
-                  with our brief and deadlines. I focused on creating the search engine, helping with the map and some of the airport statistics and parsing the data. This project taught me a lot
-                  about project management under a strict deadline and good communication in a team programming environment.</p>
-                <a href='https://github.com/scottmcn204/Group27Project' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>View the Code</a>
-
-                </div>}
-              <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>FlightScanner</h2>
-              <Image src={flightScanner} className='rounded-3xl object-cover   z-0'  width={'100%'} height={'100%'} alt="image"/>
-            </button>
           <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible0(!visible0)}>
               {visible0 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>ScrybbleChat is a messaging app which allows people to send doodles or Scrybbles to each other
@@ -320,9 +314,24 @@ export default function Home() {
                 <a href='https://testflight.apple.com/join/Kl8Ah9ZO' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>Download the App</a>
 
                 </div>}
+                
               <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>ScrybbleChat</h2>
               <Image src={scrybble} className='rounded-3xl object-cover   z-0'  width={'100%'} height={'100%'} alt="image"/>
             </button>
+          <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible15(!visible15)}>
+              {visible15 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
+                <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>FlightScanner was made for my programming project module in college. I was assigned
+                 as the team lead for my group of 4. We were given 100,000 rows of US flight data from 2020, and our task was to create an application using this data. 
+                 We created a flight scanner app that allowed the user to search by map or text for an airport, get stats on the flights in and out of that airport and 
+                 calculate CO2 emissions for a certain time period. My job as team lead involved organising sessions, delegating roles while making sure we were on track
+                  with our brief and deadlines. I focused on creating the search engine, helping with the map and some of the airport statistics and parsing the data. This project taught me a lot
+                  about project management under a strict deadline and good communication in a team programming environment.</p>
+                <a href='https://github.com/scottmcn204/Group27Project' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg mx-3'>View the Code</a>
+                </div>}
+              <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>FlightScanner</h2>
+              <Image src={flightScanner} className='rounded-3xl object-cover   z-0'  width={'100%'} height={'100%'} alt="image"/>
+            </button>
+          
           <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible5(!visible5)}>
               {visible5 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>I created this website for Trinity's Internet Society. I used react and tailwind
@@ -336,7 +345,7 @@ export default function Home() {
               <Image src={netsoc} className='rounded-3xl object-cover   z-0'  width={'100%'} height={'100%'} alt="image"/>
             </button>
 
-            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible(!visible)}>
+            {/* <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible(!visible)}>
               {visible && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This app was created using the Swift Programming Language along with a MVVM architecture.
                   It allows the user to create and store rally callouts to be used in rally races. This solves a common problem for rally navigators where it can 
@@ -346,7 +355,7 @@ export default function Home() {
                 </div>}
               <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>RallyNavigator App</h2>
               <Image src={rally} className='rounded-3xl object-cover  z-0'  width={'100%'} height={'100%'} alt="image"/>
-            </button>
+            </button> */}
             <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible1(!visible1)}>
               {visible1 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This app was made with the Swift Programming Language along with an MVVM architecture.
@@ -358,6 +367,15 @@ export default function Home() {
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Flashcards App</h2>
               <Image src={flashcards} className='rounded-3xl object-cover  ' width={'100%'} height={'100%'} alt="image"/>
             </button>
+            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible3(!visible3)}>
+              {visible3 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
+                <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This is the portfolio website you are currently on. It was created using moderen web design tools
+                such as React and Tailwind. I used this project to learn how to use these tools and use them to create an effective UI. </p>
+                <a href='https://github.com/scottmcn204/portfolio-website' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg'>View the Code</a>
+                </div>}
+            <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Portfolio Website</h2>
+              <Image src={portfolio} className='rounded-3xl object-cover ' width={'100%'} height={'100%'} alt="image"/>
+            </button>
             <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible2(!visible2)}>
               {visible2 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This system was created using HTML, CSS and JS for the website, a firebase database and a python programme
@@ -367,15 +385,6 @@ export default function Home() {
                 </div>}
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Elderly Reminder System</h2>
               <Image src={helphome} className='rounded-3xl object-cover  ' width={'100%'} height={'100%'} alt="image"/>
-            </button>
-            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible3(!visible3)}>
-              {visible3 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
-                <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This is the portfolio website you are currently on. It was created using moderen web design tools
-                such as React and Tailwind. I used this project to learn how to use these tools and use them to create an effective UI. </p>
-                <a href='https://github.com/scottmcn204/portfolio-website' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white relative top-6 p-3 rounded-lg'>View the Code</a>
-                </div>}
-            <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Portfolio Website</h2>
-              <Image src={portfolio} className='rounded-3xl object-cover ' width={'100%'} height={'100%'} alt="image"/>
             </button>
           </div>
 
