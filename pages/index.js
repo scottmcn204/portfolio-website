@@ -20,6 +20,7 @@ import netsoc from "/public/netsoc.png";
 import scrybble from "/public/scrybble.jpg";
 import flightScanner from "/public/flightScanner.png"
 import gameboy from "/public/gameboy.png"
+import neural from "/public/neural.jpg"
 import { use, useState } from 'react';
 import {useRef} from 'react';
 
@@ -101,12 +102,12 @@ export default function Home() {
           <p className='text-sm md:text-base p-4 text-gray-800 m-1 mb-8 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
             I am currently studying Computer Science in <span className='text-pink-400 font-bold'>Trinity College
             Dublin</span> in the class of 2027. As a part of my studies, I do a 
-            lot of work using <span className='text-pink-400 font-bold'>Java</span> and am learning to use it in a wide
+            lot of work using <span className='text-pink-400 font-bold'>Java and C</span> and am learning to use them in a wide
             area of applications. I also do a lot of work with <span className='text-pink-400 font-bold'>ARM Assembly and VHDL</span> to understand hardware at a low level,
             this is a part of my course I'm especially passionate about. Alongside my college course, I enjoy
             creating apps using the <span className='text-pink-400 font-bold'>Swift Programming Language</span> and 
             making websites with modern tools such as <span className='text-pink-400 font-bold'>React and CSS tailwind</span>.<br/>
-            While in secondary school, I also taught myself <span className='text-pink-400 font-bold'>Python</span> .<br/>
+            While in secondary school, I also taught myself <span className='text-pink-400 font-bold'>Python</span>, which I now use to learn about and build Neural Networks .<br/>
             I really enjoy learning new things and aquiring new skills. I spend a lot of my free time playing Ultimate Frisbee with my local team
             and working on vintage cars such as my MG Midget and Morris Minor 1000.
             </p>
@@ -254,7 +255,8 @@ export default function Home() {
             </button>
             <p className='mb-3 text-gray-800 dark:text-gray-200'>
               Python was the first programming language I learned, which helped me to get a foundational understanding of programming and software development. I used it to 
-              create small 2d games with PyGame, programme Raspberry Pis and MicroBits and programme mathematical concepts such as Conway's Game of Life.
+              create small 2d games with PyGame, programme Raspberry Pis and MicroBits and programme mathematical concepts such as Conway's Game of Life. I now utilise Python 
+              along with the numpy library to learn about and build neural networks
             </p>
             <button className='flex justify-center text-lg bg-gradient-to-r from-gray-400 to-gray-600 text-white w-48 mx-auto rounded-lg mb-3' onClick={() => setVisible12(!visible12)}>
               <p className=' font-bold py-2'>Back</p>
@@ -297,11 +299,11 @@ export default function Home() {
           <div className='text-sm md:text-base p-4 text-gray-800 m-1 mb-2 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
             <h3 className='text-xl md:text-2xl py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>What I'm currently working on:</h3>
             <p className='mb-2'>
-              I'm currently learning to design games for the original DMG-01 Gameboy in Assembly code. I'm doing this to get a deeper understanding of computer architecture and hardware. I chose the 
-              original Gameboy due to it's hardware limitations which make the process of understanding each decision in it's architecture easier. To achieve this I am using the book "Gameboy Assembly 
-              Programming for the Modern Game Developer" along with the RGBDS library to compile my Assembly code.
+              I'm currently learning about Neural Networks and Deep Learning through projects outside of my college course. This is an area of the field I'd love to find out more about.
+              Right now Im following Michael Nielson's book on the topic and building a Neural Network for classifying handwritten digits. I plan to continuously do small projects such as 
+              this alongside my college course
             </p>
-            <Image src={gameboy} className='rounded-3xl object-cover   z-0'  width={'100%'} height={'100%'} alt="image"/>
+            <Image src={neural} className='rounded-3xl object-cover   z-0'  width={'100%'} height={'100%'} alt="image"/>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
           <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible0(!visible0)}>
