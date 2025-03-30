@@ -19,10 +19,24 @@ import server from "/public/server.png";
 import netsoc from "/public/netsoc.png";
 import scrybble from "/public/scrybble.jpg";
 import flightScanner from "/public/flightScanner.png"
+import me from "/public/me.jpg"
 import gameboy from "/public/gameboy.png"
 import neural from "/public/neural.jpg"
 import { use, useState } from 'react';
 import {useRef} from 'react';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+const images = [
+  { src: portfolio, text: "This is the portfolio website you are currently on. It was created using moderen web design tools such as React and Tailwind. I used this project to learn how to use these tools and use them to create an effective UI.", title: "Portfolio Website" },
+  { src: scrybble, text: "ScrybbleChat is a messaging app which allows people to send doodles or Scrybbles to each other as a form of communication. It's still in development and I am continuously adding additional functionality such as groupchats and more drawing tools. This is a full stack app using Swift along with Firebase Database, Messaging and Authentication. It's my largest project to date and I hope to release it to the IOS app store soon. The beta version is currently available for testing", title: "ScrybbleChat" },
+  { src: netsoc, text: "I created this website for Trinity's Internet Society. I used react and tailwind along with user interface librarys such as TsParticles which aided in creating a clean asthetic for the site's complete remake. I plan to work continuously on this website to create features such as direct access to our server services for students.", title: "Netsoc Website" },
+  { src: flightScanner, text: "FlightScanner was made for my programming project module in college. I was assigned as the team lead for my group of 4. We were given 100,000 rows of US flight data from 2020, and our task was to create an application using this data. We created a flight scanner app that allowed the user to search by map or text for an airport, get stats on the flights in and out of that airport and calculate CO2 emissions for a certain time period. My job as team lead involved organising sessions, delegating roles while making sure we were on track with our brief and deadlines. I focused on creating the search engine, helping with the map and some of the airport statistics and parsing the data. This project taught me a lot about project management under a strict deadline and good communication in a team programming environment.", title: "FlightScanner" },
+];
 
 
 export default function Home() {
@@ -51,6 +65,7 @@ export default function Home() {
   const [visible13, setVisible13] = useState(false);
   const [visible14, setVisible14] = useState(false);
   const [visible15, setVisible15] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -99,7 +114,8 @@ export default function Home() {
         <section ref={ref} className='min-h-screen '>
           <h3 className='text-2xl font-burtons py-1 dark:text-white text-center'>About Me</h3>
           
-          <p className='text-sm md:text-base p-4 text-gray-800 m-1 mb-8 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
+          <div className='text-sm md:text-base p-4 text-gray-800 m-1 mb-8 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
+          <p className='mb-2'>
             I am currently studying Computer Science in <span className='text-pink-400 font-bold'>Trinity College
             Dublin</span> in the class of 2027. As a part of my studies, I do a 
             lot of work using <span className='text-pink-400 font-bold'>Java and C</span> and am learning to use them in a wide
@@ -111,6 +127,10 @@ export default function Home() {
             I really enjoy learning new things and aquiring new skills. I spend a lot of my free time playing Ultimate Frisbee with my local team
             and working on vintage cars such as my MG Midget and Morris Minor 1000.
             </p>
+            <div className='relative mx-auto w-40 h-40 bg-gradient-to-b from-gray-300 to-teal-300 rounded-3xl shadow-2xl md:h-64 md:w-64 '>
+            <Image src={me} className='rounded-3xl h-full w-full object-cover object-center border-transparent border-4' alt="image"/>
+            </div>
+            </div>
 
             {!visible6 && !visible7 && !visible8 && !visible9 && <div className='text-center rounded-3xl shadow-2xl p-5 mb-8 max-w-xl mx-auto animate-fadeInSlow'>
             <h3 className='text-xl md:text-2xl py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>My Work Experience:</h3>
@@ -291,12 +311,12 @@ export default function Home() {
           </div>}
         </section>
         <section ref={ref2} className='min-h-screen'>
-          <h3 className='text-2xl font-burtons py-1 dark:text-white text-center'>Portfolio</h3>
+          {/* <h3 className='text-2xl font-burtons py-1 dark:text-white text-center'>Portfolio</h3>
           <p className='text-sm md:text-base p-4 text-gray-800 m-1 mb-2 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
             The following are a range of projects which I have done using 
             the languages listed above. Click on a project to view more information.
-          </p>
-          <div className='text-sm md:text-base p-4 text-gray-800 m-1 mb-2 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
+          </p> */}
+          {/* <div className='text-sm md:text-base p-4 text-gray-800 m-1 mb-2 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto'>
             <h3 className='text-xl md:text-2xl py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>What I'm currently working on:</h3>
             <p className='mb-2'>
               I'm currently learning about Neural Networks and Deep Learning through projects outside of my college course. This is an area of the field I'd love to find out more about.
@@ -304,9 +324,9 @@ export default function Home() {
               this alongside my college course
             </p>
             <Image src={neural} className='rounded-3xl object-cover   z-0'  width={'100%'} height={'100%'} alt="image"/>
-          </div>
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-          <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible0(!visible0)}>
+          </div> */}
+          {/* <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'> */}
+          {/* <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible0(!visible0)}>
               {visible0 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>ScrybbleChat is a messaging app which allows people to send doodles or Scrybbles to each other
                  as a form of communication. It's still in development and I am continuously adding additional functionality such as groupchats and more drawing tools. This is a full stack app 
@@ -345,7 +365,7 @@ export default function Home() {
                 </div>}
               <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Netsoc Website</h2>
               <Image src={netsoc} className='rounded-3xl object-cover   z-0'  width={'100%'} height={'100%'} alt="image"/>
-            </button>
+            </button> */}
 
             {/* <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible(!visible)}>
               {visible && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
@@ -358,7 +378,7 @@ export default function Home() {
               <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>RallyNavigator App</h2>
               <Image src={rally} className='rounded-3xl object-cover  z-0'  width={'100%'} height={'100%'} alt="image"/>
             </button> */}
-            <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible1(!visible1)}>
+            {/* <button className='basis-1/3 flex-1 max-w-sm mx-auto  rounded-3xl relative overflow-hidden z-10 bg-gradient-to-r from-gray-200 to-gray-500 shadow-2xl' onClick={() => setVisible1(!visible1)}>
               {visible1 && <div className=' z-30 absolute top-0 left-0 bg-gradient-to-r from-gray-400 to-gray-500 w-full h-full rounded-3xl opacity-90 animate-appearfade overflow-auto'>
                 <p className=' text-white text-center mt-16 mx-2 text-xs md:text-s'>This app was made with the Swift Programming Language along with an MVVM architecture.
                   It allows users to create and organise flashcards which can then be used to test themselves. The app solves the problem of students usually
@@ -387,9 +407,57 @@ export default function Home() {
                 </div>}
             <h2 className=' absolute top-3 left-4 z-50  bg-gradient-to-r from-purple-400 to-pink-600 text-white p-2 rounded-xl'>Elderly Reminder System</h2>
               <Image src={helphome} className='rounded-3xl object-cover  ' width={'100%'} height={'100%'} alt="image"/>
-            </button>
-          </div>
+            </button> */}
+          {/* </div> */}
 
+          <div className="min-h-screen flex flex-col items-center justify-center p-6">
+        <h1 className="text-3xl  mb-4 font-burtons">Portfolio</h1>
+
+            <div className="w-full my-3 ">
+              <Swiper 
+                  modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
+                  effect="coverflow"
+                  grabCursor={true}
+                  centeredSlides={true}
+                  breakpoints={{
+                    320: { slidesPerView: 1 }, // 1 image on small screens
+                    640: { slidesPerView: 1.5 }, // Slightly wider on tablets
+                    1024: { slidesPerView: 3 }, // 3 images on desktops
+                  }}
+                  loop={true}
+                  autoplay={{ delay: 5000 }}
+                  onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+                  coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 200,
+                    scale: 0.7,
+                    modifier: 1,
+                    slideShadows: false,
+                  }}
+                className="rounded-xl overflow-hidden"
+              >
+                {images.map((item, index) => (
+                  <SwiperSlide key={index} className="flex justify-center">
+                    <div className="relative w-96 h-96">
+                      <Image
+                        src={item.src}
+                        alt={`Slide ${index}`}
+                        layout="fill"
+                        objectFit="cover"
+                        className="rounded-lg shadow-2xl"
+                        priority={index === 0} // Load the first image first
+                      />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>  
+              <div className='text-sm md:text-base p-4 text-gray-800 m-1 mb-2 dark:text-gray-200 shadow-2xl text-center rounded-3xl max-w-xl mx-auto min-h-[120px] flex flex-col justify-center overflow-hidden '>
+                <h3 className='text-xl md:text-2xl py-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>{images[activeIndex].title }</h3>
+                <p className='my-2'>{images[activeIndex].text}</p>
+              </div>
+          </div>
         </section>
 
       </main>
