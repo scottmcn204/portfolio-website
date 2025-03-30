@@ -414,7 +414,7 @@ export default function Home() {
           <div className="min-h-screen flex flex-col items-center justify-center">
         <h1 className="text-3xl  mb-4 font-burtons">Portfolio</h1>
 
-            <div className="w-full my-3 max-w-5xl flex justify-center mx-auto">
+            <div className="w-full my-3 max-w-xl flex justify-center mx-auto aspect-square">
               <Swiper 
                   modules={[Navigation, Pagination, Autoplay]}
                   grabCursor={true}
@@ -434,9 +434,9 @@ export default function Home() {
               >
                 {images.map((item, index) => (
                   <SwiperSlide key={index} className="flex justify-center">
-                    <div className="relative flex w-64 h-64 md:w-96 md:h-96 justify-center items-center">
+                    <div className="absoulute  md:w-96 md:h-96 justify-center items-center">
                       <Image
-                        src={item.src}
+                        src={item.src}  
                         alt={`Slide ${index}`}
                         layout="fill"
                         objectFit="cover"
