@@ -434,7 +434,7 @@ export default function Home() {
               >
                 {images.map((item, index) => (
                   <SwiperSlide key={index} className="flex justify-center">
-                    <div className="absoulute  md:w-96 md:h-96 justify-center items-center">
+                    <div className="absoulute w-96 h-96 justify-center items-center">
                       <Image
                         src={item.src}  
                         alt={`Slide ${index}`}
