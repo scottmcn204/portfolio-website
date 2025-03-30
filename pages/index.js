@@ -26,10 +26,11 @@ import { use, useState } from 'react';
 import {useRef} from 'react';
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Navigation, Pagination, Autoplay } from "swiper/modules";
+import { EffectCoverflow, Navigation, Pagination, Autoplay, EffectCards } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/effect-cards"
 
 const images = [
   { src: portfolio, text: "This is the portfolio website you are currently on. It was created using moderen web design tools such as React and Tailwind. I used this project to learn how to use these tools and use them to create an effective UI.", title: "Portfolio Website" },
@@ -410,42 +411,36 @@ export default function Home() {
             </button> */}
           {/* </div> */}
 
-          <div className="min-h-screen flex flex-col items-center justify-center p-6">
+          <div className="min-h-screen flex flex-col items-center justify-center">
         <h1 className="text-3xl  mb-4 font-burtons">Portfolio</h1>
 
-            <div className="w-full my-3 ">
+            <div className="w-full my-3 max-w-5xl flex justify-center mx-auto">
               <Swiper 
-                  modules={[EffectCoverflow, Navigation, Pagination, Autoplay]}
-                  effect="coverflow"
+                  modules={[Navigation, Pagination, Autoplay]}
                   grabCursor={true}
                   centeredSlides={true}
-                  breakpoints={{
-                    320: { slidesPerView: 1 }, // 1 image on small screens
-                    640: { slidesPerView: 1.5 }, // Slightly wider on tablets
-                    1024: { slidesPerView: 3 }, // 3 images on desktops
-                  }}
+                  // breakpoints={{
+                  //   320: { slidesPerView: 1 }, // 1 image on small screens
+                  //   640: { slidesPerView: 1.5 }, // Slightly wider on tablets
+                  //   1024: { slidesPerView: 2.5 }, // 3 images on desktops
+                  // }}
                   loop={true}
                   autoplay={{ delay: 5000 }}
                   onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-                  coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 200,
-                    scale: 0.7,
-                    modifier: 1,
-                    slideShadows: false,
-                  }}
-                className="rounded-xl overflow-hidden"
+                  navigation
+                  slidesPerView={1}
+                  pagination={{ clickable: true }}
+                className="rounded-xl overflow-hidden "
               >
                 {images.map((item, index) => (
                   <SwiperSlide key={index} className="flex justify-center">
-                    <div className="justify-center relative w-48 h-48 md:w-96 md:h-96">
+                    <div className="relative flex w-64 h-64 md:w-96 md:h-96 justify-center items-center">
                       <Image
                         src={item.src}
                         alt={`Slide ${index}`}
                         layout="fill"
                         objectFit="cover"
-                        className="rounded-lg shadow-2xl"
+                        className="rounded-lg"
                         priority={index === 0} // Load the first image first
                       />
                     </div>
