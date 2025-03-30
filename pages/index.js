@@ -20,8 +20,10 @@ import netsoc from "/public/netsoc.png";
 import scrybble from "/public/scrybble.jpg";
 import flightScanner from "/public/flightScanner.png"
 import me from "/public/me.jpg"
+import taxonomy from "/public/taxonomy.png"
 import gameboy from "/public/gameboy.png"
 import neural from "/public/neural.jpg"
+import phish from "/public/phish.png"
 import { use, useState } from 'react';
 import {useRef} from 'react';
 
@@ -33,6 +35,8 @@ import "swiper/css/pagination";
 import "swiper/css/effect-cards"
 
 const images = [
+  { src: taxonomy, text: "", title: "Quantexa Project - Interactive Taxonomy Builder" },
+  { src: phish, text: "Phishing is a type of cyberattack which aims to collect sensitive information from individuals by masking as a trusted source, such as a friend or trusted website. PhishingBoat was a project created alongside a classmate at KTH with the goal of improving upon traditional methods of phishing website detection using machine learning methods. The program would run a classification model on a website, and if it thought it was phishing, it would warn the user. We experimented with Random Forest Classification, Multi-layer Perceptrons and Transformer Models. In the end our program achieved an accuracy of 94% on test data and performed as expected with edge cases in the real world. The project receieved top marks in our AI project course. From this I gained valuable skills in collaboration with complex project as well as experience working with a research project.", title: "PhishingBoat" },
   { src: portfolio, text: "This is the portfolio website you are currently on. It was created using moderen web design tools such as React and Tailwind. I used this project to learn how to use these tools and use them to create an effective UI.", title: "Portfolio Website" },
   { src: scrybble, text: "ScrybbleChat is a messaging app which allows people to send doodles or Scrybbles to each other as a form of communication. It's still in development and I am continuously adding additional functionality such as groupchats and more drawing tools. This is a full stack app using Swift along with Firebase Database, Messaging and Authentication. It's my largest project to date and I hope to release it to the IOS app store soon. The beta version is currently available for testing", title: "ScrybbleChat" },
   { src: netsoc, text: "I created this website for Trinity's Internet Society. I used react and tailwind along with user interface librarys such as TsParticles which aided in creating a clean asthetic for the site's complete remake. I plan to work continuously on this website to create features such as direct access to our server services for students.", title: "Netsoc Website" },
@@ -86,7 +90,7 @@ export default function Home() {
             <h1 className='text-lg md:text-xl font-burtons dark:text-white'>MCNALLSC</h1>
             <ul className='flex items-center'>
               <li className=' cursor-pointer text-white bg-gradient-to-r from-cyan-500 to-teal-500 p-2 rounded-full text-base md:text-xl'><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}/></li>
-              <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href="https://drive.google.com/file/d/17DJL8FryLx6XKV3vAFhpXJmPDP5gdSpH/view?usp=sharing">Resume</a></li>
+              <li className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-4 text-xs md:text-base'><a href="https://drive.google.com/file/d/1mnlwsTYTVEmMYsoRSZ_HqgykD0uCIiHL/view?usp=drive_link">Resume</a></li>
             </ul>
           </nav>
           <div className='relative mx-auto w-40 h-40 bg-gradient-to-b from-gray-300 to-teal-300 rounded-full shadow-2xl md:h-64 md:w-64 animate-appearfade'>
